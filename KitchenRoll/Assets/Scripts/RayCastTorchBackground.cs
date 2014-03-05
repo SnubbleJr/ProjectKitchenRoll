@@ -2,17 +2,14 @@
 
 using UnityEngine;
 using System.Collections;
-
+	
 public class RayCastTorchBackground : MonoBehaviour {
 	
-	public float radius = 1.0f;
-	public float vertexCount = 20f;
-
 	//default values
-	private float maxSize = 15;
-	private float growRate = 0.5f;
+	private float maxSize = 20f;
+	private float growRate = 0.1f;
 	private int castFrequency = 32;
-	private float destructionTime = 10f;
+	private float destructionTime = 2f;
 	private Vector3 offset = new Vector3 (0,256,0);
 	private bool spawnAgain = true;
 	private bool cone = false;
@@ -32,8 +29,7 @@ public class RayCastTorchBackground : MonoBehaviour {
 	private float timerSize;
 	
 	void Start () {
-		//NOTE! DO NOT PLACE THIS OUTSIDE OF THE GAME! mAKE SURE THERE IS ALWAYS SOMEWTHING BEHIND IT, NOT JUST EMPTY GAME SPACE!
-		/*
+		
 		currentSize = 0.1f;
 		timerSize = currentSize;
 		currentGrowRate = 0f;
@@ -48,40 +44,14 @@ public class RayCastTorchBackground : MonoBehaviour {
 		//makes a mesh, of viable size and fedelity
 		//it is altered by a ray trace
 		
-		//getting the texture that will be applyed to it
-		mainCameraGrabber = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<ScreenGrabber>();
-
-		//creating core arrays
-		vecArr = vecArrMake(1.0f);
-		maxVecArr = vecArrMake(maxSize);
-		
-		uvArr = uvArrMake(vecArr);
-		
-		triArr = triArrMake();
+		createArrays ();
 		
 		//moving it to the top plane
-		offset.z = mainCameraGrabber.getZOffset ();
-		transform.position += offset;
+		//transform.position += offset;
 		
 		renderer.enabled = true;
 		
-		make ();*/
-
-		LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
-		Color c1 = new Color(0.5f, 0.5f, 0.5f, 1);
-		lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
-		lineRenderer.SetColors(c1, c1);
-		lineRenderer.SetWidth(0.05f, 0.05f);
-		lineRenderer.SetVertexCount((	int)vertexCount+1);
-		
-		for(int i = 0; i < vertexCount+1; i++)
-		{
-			float angle = i;
-			i = (int)((i / vertexCount) * Mathf.PI * 2);
-			Vector3 pos = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * radius;
-			lineRenderer.SetPosition(i, pos);
-		}
-	
+		make ();
 	}
 	
 	// Update is called once per frame
@@ -90,23 +60,43 @@ public class RayCastTorchBackground : MonoBehaviour {
 		//transform.position = Vector3.Lerp (transform.position, transform.position - (new Vector3 (0	, 0, 0.01f)), destructionTime);
 		
 		if (timerSize >= (maxSize - 1)) {
-			//fade ();
+			fade ();
 		} else {
 			currentGrowRate += growRate;
 			currentSize += growRate;
 			timerSize += currentGrowRate;
-			//make ();
+			updateTorch();
 		}
 	}
 	
 	void make()
 	{
-		vecArr = currentVecArrUpdate(vecArr);	
-		uvArr = uvArrMake(vecArr);
+		vecArr = currentVecArrUpdate(vecArr);
+		uvArr = uvArrMake(maxVecArr);
 		mesh = meshMaker(vecArr, uvArr, triArr);
 		Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 		
-		//debugDraw(vecArr);
+		debugDraw(vecArr);
+	}
+	
+	void OnDestroy() {
+		DestroyImmediate(renderer.material);
+	}
+	
+	void setTexture()
+	{
+		mainCameraGrabber = Camera.main.GetComponent<ScreenGrabber>();
+		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime);
+	}
+	
+	void createArrays()
+	{
+		vecArr = vecArrMake(1.0f);
+		maxVecArr = vecArrMake(maxSize);
+		
+		uvArr = uvArrMake(vecArr);
+		
+		triArr = triArrMake();
 	}
 	
 	void fade()
@@ -118,8 +108,13 @@ public class RayCastTorchBackground : MonoBehaviour {
 		
 		if (renderer.material.color.r <= 0.01f)
 		{
-			Destroy (gameObject);
+			DestroyImmediate(gameObject);
 		}
+	}
+	
+	void updateTorch()
+	{
+		make();
 	}
 	
 	Vector3[] vecArrMake(float magnitude)
@@ -149,7 +144,7 @@ public class RayCastTorchBackground : MonoBehaviour {
 		}
 		return uv;
 	}
-	
+
 	int[] triArrMake()
 	{
 		int[] tri = new int[castFrequency*3];
@@ -212,28 +207,28 @@ public class RayCastTorchBackground : MonoBehaviour {
 		return vecArr;
 	}
 	
-	/*Vector2[] currentUvArrUpdate(Vector2[] uvArr)
+	Vector2[] currentUvArrUpdate(Vector2[] uvArr)
 	{
 		//updatees the vec2 array given, growing it until it hits maxsize or collision
-
+		
 		float sizeRatio = vecArr[1].magnitude/maxVecArr[1].magnitude;
-
+		
 		for (int i=0; i<uvArr.Length; i++)
 		{
-			if (uvArr[i].magnitude < maxUvArr[i].magnitude)
+			//if (uvArr[i].magnitude < maxUvArr[i].magnitude)
 			{
-				uvArr[i] = coreUvArr[i] * (1 + currentSize);
+				//uvArr[i] = coreUvArr[i] * (1 + currentSize);
 			}
-			else
+			//else
 			{
-				uvArr[i] = maxUvArr[i];
+				//uvArr[i] = maxUvArr[i];
 			}
 			//print(i + ". core: " + coreUvArr[i] + ", current: " + uvArr[i] + ", max: " + maxUvArr[i] + ", ratio: " + sizeRatio);
 		}
 		return uvArr;
-	}*/
+	}
 	
-	Mesh meshMaker(Vector3[] newVertices, Vector2[] newUV, int[] newTriangles)
+	public Mesh meshMaker(Vector3[] newVertices, Vector2[] newUV, int[] newTriangles)
 	{
 		Mesh mesh = new Mesh();
 		GetComponent<MeshFilter>().mesh = mesh;

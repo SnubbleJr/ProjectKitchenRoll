@@ -160,7 +160,8 @@ function UpdateSmoothedMovementDirection ()
 	isMoving = Mathf.Abs (h) > 0.1 || Mathf.Abs (v) > 0.1;
 		
 	// Target direction relative to the camera
-	var targetDirection = h * right + v * forward;
+	//var targetDirection = h * right + v * forward;
+	var targetDirection = h * right;
 	
 	// Grounded controls
 	if (grounded)

@@ -5,6 +5,7 @@ public class RayCasTorchEmitter : MonoBehaviour {
 	
 	//default values
 	public GameObject childTorch;
+	public GameObject torchBG;
 	public float torchesPerSecond = 1f;
 	public float maxSize = 5;
 	public float growRate = 0.01f;
@@ -16,7 +17,8 @@ public class RayCasTorchEmitter : MonoBehaviour {
 
 	private float range;
 	private GameObject player;
-		
+	private bool firstFrameRendered = false;	
+
 	// Use this for initialization
 	void Start () {
 		range = 75;	
@@ -33,16 +35,24 @@ public class RayCasTorchEmitter : MonoBehaviour {
 	{
 		if (Vector3.Distance(player.transform.position, transform.position) < range)
 		{
-			GameObject torch = Instantiate (childTorch, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
-			RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
-			torchScript.setMaxSize (maxSize);
-			torchScript.setGrowRate (growRate);
-			torchScript.setCastFrequency (castFrequency);
-			torchScript.setDestructionTime (destructionTime);
-			torchScript.setOffset (offset);
-			torchScript.setCone (cone);
-			torchScript.setConeFrom (coneFrom);
-			torchScript.setConeTo (coneTo);
+			if (firstFrameRendered)
+			{
+				GameObject torch = Instantiate (childTorch, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
+				RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
+				torchScript.setMaxSize (maxSize);
+				torchScript.setGrowRate (growRate);
+				torchScript.setCastFrequency (castFrequency);
+				torchScript.setDestructionTime (destructionTime);
+				torchScript.setOffset (offset);
+				torchScript.setCone (cone);
+				torchScript.setConeFrom (coneFrom);
+				torchScript.setConeTo (coneTo);
+				torchScript.setTorchBG (torchBG);
+			}
+			else
+			{
+				firstFrameRendered = true;
+			}
 		}
 	}
 }

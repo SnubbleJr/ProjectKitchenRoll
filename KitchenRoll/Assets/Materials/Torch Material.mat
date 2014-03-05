@@ -31,7 +31,7 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .410714298
+        second: .375
       data:
         first:
           name: _BumpAmt

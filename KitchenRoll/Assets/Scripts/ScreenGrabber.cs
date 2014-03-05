@@ -4,7 +4,6 @@ using System.Collections;
 public class ScreenGrabber : MonoBehaviour {
 	private bool firstFrameRendered = false;
 	private Texture2D frameTexture;
-	private Renderer destinationRender;
 	private float zOffset;
 	private float zIncrement = 0.005f;
 	private float timeToZReset;
