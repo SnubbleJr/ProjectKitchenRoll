@@ -1,0 +1,1228 @@
+fileFormatVersion: 2
+guid: d058dc0a5190c0343851b8f1ce7de57c
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Camera Interest
+    100002: Mia:Head
+    100004: Mia:Hips
+    100006: Mia:LeftArm
+    100008: Mia:LeftArm_Dummy
+    100010: Mia:LeftArmRoll
+    100012: Mia:LeftFoot
+    100014: Mia:LeftForeArm
+    100016: Mia:LeftForeArmRoll
+    100018: Mia:LeftHand
+    100020: Mia:LeftHandIndex1
+    100022: Mia:LeftHandIndex2
+    100024: Mia:LeftHandIndex3
+    100026: Mia:LeftHandIndex4
+    100028: Mia:LeftHandMiddle1
+    100030: Mia:LeftHandMiddle2
+    100032: Mia:LeftHandMiddle3
+    100034: Mia:LeftHandMiddle4
+    100036: Mia:LeftHandPinky1
+    100038: Mia:LeftHandPinky2
+    100040: Mia:LeftHandPinky3
+    100042: Mia:LeftHandPinky4
+    100044: Mia:LeftHandRing1
+    100046: Mia:LeftHandRing2
+    100048: Mia:LeftHandRing3
+    100050: Mia:LeftHandRing4
+    100052: Mia:LeftHandThumb1
+    100054: Mia:LeftHandThumb2
+    100056: Mia:LeftHandThumb3
+    100058: Mia:LeftHandThumb4
+    100060: Mia:LeftHips_Dummy
+    100062: Mia:LeftLeg
+    100064: Mia:LeftLegRoll
+    100066: Mia:LeftShoulder
+    100068: Mia:LeftShoulder_Dummy
+    100070: Mia:LeftToeBase
+    100072: Mia:LeftUpLeg
+    100074: Mia:LeftUpLegRoll
+    100076: Mia:Master
+    100078: Mia:Neck
+    100080: Mia:Reference
+    100082: Mia:RightArm
+    100084: Mia:RightArm_Dummy
+    100086: Mia:RightArmRoll
+    100088: Mia:RightFoot
+    100090: Mia:RightForeArm
+    100092: Mia:RightForeArmRoll
+    100094: Mia:RightHand
+    100096: Mia:RightHandIndex1
+    100098: Mia:RightHandIndex2
+    100100: Mia:RightHandIndex3
+    100102: Mia:RightHandIndex4
+    100104: Mia:RightHandMiddle1
+    100106: Mia:RightHandMiddle2
+    100108: Mia:RightHandMiddle3
+    100110: Mia:RightHandMiddle4
+    100112: Mia:RightHandPinky1
+    100114: Mia:RightHandPinky2
+    100116: Mia:RightHandPinky3
+    100118: Mia:RightHandPinky4
+    100120: Mia:RightHandRing1
+    100122: Mia:RightHandRing2
+    100124: Mia:RightHandRing3
+    100126: Mia:RightHandRing4
+    100128: Mia:RightHandThumb1
+    100130: Mia:RightHandThumb2
+    100132: Mia:RightHandThumb3
+    100134: Mia:RightHandThumb4
+    100136: Mia:RightHips_Dummy
+    100138: Mia:RightLeg
+    100140: Mia:RightLegRoll
+    100142: Mia:RightShoulder
+    100144: Mia:RightShoulder_Dummy
+    100146: Mia:RightToeBase
+    100148: Mia:RightUpLeg
+    100150: Mia:RightUpLegRoll
+    100152: Mia:Root
+    100154: Mia:ServoControl
+    100156: Mia:Spine
+    100158: Mia:Spine1
+    100160: Mia:Spine2
+    100162: Mia:Spine_Dummy
+    100164: Mia_Ctrl:ChestEndEffector
+    100166: Mia_Ctrl:ChestOriginEffector
+    100168: Mia_Ctrl:Head
+    100170: Mia_Ctrl:HeadEffector
+    100172: Mia_Ctrl:Hips
+    100174: Mia_Ctrl:HipsEffector
+    100176: Mia_Ctrl:LeftAnkleEffector
+    100178: Mia_Ctrl:LeftAnkleEffectorPivot1
+    100180: Mia_Ctrl:LeftAnkleEffectorPivot2
+    100182: Mia_Ctrl:LeftArm
+    100184: Mia_Ctrl:LeftArmRoll
+    100186: Mia_Ctrl:LeftElbowEffector
+    100188: Mia_Ctrl:LeftFoot
+    100190: Mia_Ctrl:LeftFootEffector
+    100192: Mia_Ctrl:LeftForeArm
+    100194: Mia_Ctrl:LeftForeArmRoll
+    100196: Mia_Ctrl:LeftHand
+    100198: Mia_Ctrl:LeftHandIndex1
+    100200: Mia_Ctrl:LeftHandIndex2
+    100202: Mia_Ctrl:LeftHandIndex3
+    100204: Mia_Ctrl:LeftHandIndex4
+    100206: Mia_Ctrl:LeftHandIndexEffector
+    100208: Mia_Ctrl:LeftHandMiddle1
+    100210: Mia_Ctrl:LeftHandMiddle2
+    100212: Mia_Ctrl:LeftHandMiddle3
+    100214: Mia_Ctrl:LeftHandMiddle4
+    100216: Mia_Ctrl:LeftHandMiddleEffector
+    100218: Mia_Ctrl:LeftHandPinky1
+    100220: Mia_Ctrl:LeftHandPinky2
+    100222: Mia_Ctrl:LeftHandPinky3
+    100224: Mia_Ctrl:LeftHandPinky4
+    100226: Mia_Ctrl:LeftHandPinkyEffector
+    100228: Mia_Ctrl:LeftHandRing1
+    100230: Mia_Ctrl:LeftHandRing2
+    100232: Mia_Ctrl:LeftHandRing3
+    100234: Mia_Ctrl:LeftHandRing4
+    100236: Mia_Ctrl:LeftHandRingEffector
+    100238: Mia_Ctrl:LeftHandThumb1
+    100240: Mia_Ctrl:LeftHandThumb2
+    100242: Mia_Ctrl:LeftHandThumb3
+    100244: Mia_Ctrl:LeftHandThumb4
+    100246: Mia_Ctrl:LeftHandThumbEffector
+    100248: Mia_Ctrl:LeftHipEffector
+    100250: Mia_Ctrl:LeftKneeEffector
+    100252: Mia_Ctrl:LeftLeg
+    100254: Mia_Ctrl:LeftLegRoll
+    100256: Mia_Ctrl:LeftShoulder
+    100258: Mia_Ctrl:LeftShoulderEffector
+    100260: Mia_Ctrl:LeftToeBase
+    100262: Mia_Ctrl:LeftUpLeg
+    100264: Mia_Ctrl:LeftUpLegRoll
+    100266: Mia_Ctrl:LeftWristEffector
+    100268: Mia_Ctrl:Neck
+    100270: Mia_Ctrl:Reference
+    100272: Mia_Ctrl:RightAnkleEffector
+    100274: Mia_Ctrl:RightAnkleEffectorPivot1
+    100276: Mia_Ctrl:RightAnkleEffectorPivot2
+    100278: Mia_Ctrl:RightArm
+    100280: Mia_Ctrl:RightArmRoll
+    100282: Mia_Ctrl:RightElbowEffector
+    100284: Mia_Ctrl:RightFoot
+    100286: Mia_Ctrl:RightFootEffector
+    100288: Mia_Ctrl:RightForeArm
+    100290: Mia_Ctrl:RightForeArmRoll
+    100292: Mia_Ctrl:RightHand
+    100294: Mia_Ctrl:RightHandIndex1
+    100296: Mia_Ctrl:RightHandIndex2
+    100298: Mia_Ctrl:RightHandIndex3
+    100300: Mia_Ctrl:RightHandIndex4
+    100302: Mia_Ctrl:RightHandIndexEffector
+    100304: Mia_Ctrl:RightHandMiddle1
+    100306: Mia_Ctrl:RightHandMiddle2
+    100308: Mia_Ctrl:RightHandMiddle3
+    100310: Mia_Ctrl:RightHandMiddle4
+    100312: Mia_Ctrl:RightHandMiddleEffector
+    100314: Mia_Ctrl:RightHandPinky1
+    100316: Mia_Ctrl:RightHandPinky2
+    100318: Mia_Ctrl:RightHandPinky3
+    100320: Mia_Ctrl:RightHandPinky4
+    100322: Mia_Ctrl:RightHandPinkyEffector
+    100324: Mia_Ctrl:RightHandRing1
+    100326: Mia_Ctrl:RightHandRing2
+    100328: Mia_Ctrl:RightHandRing3
+    100330: Mia_Ctrl:RightHandRing4
+    100332: Mia_Ctrl:RightHandRingEffector
+    100334: Mia_Ctrl:RightHandThumb1
+    100336: Mia_Ctrl:RightHandThumb2
+    100338: Mia_Ctrl:RightHandThumb3
+    100340: Mia_Ctrl:RightHandThumb4
+    100342: Mia_Ctrl:RightHandThumbEffector
+    100344: Mia_Ctrl:RightHipEffector
+    100346: Mia_Ctrl:RightKneeEffector
+    100348: Mia_Ctrl:RightLeg
+    100350: Mia_Ctrl:RightLegRoll
+    100352: Mia_Ctrl:RightShoulder
+    100354: Mia_Ctrl:RightShoulderEffector
+    100356: Mia_Ctrl:RightToeBase
+    100358: Mia_Ctrl:RightUpLeg
+    100360: Mia_Ctrl:RightUpLegRoll
+    100362: Mia_Ctrl:RightWristEffector
+    100364: Mia_Ctrl:Spine
+    100366: Mia_Ctrl:Spine1
+    100368: Mia_Ctrl:Spine2
+    100370: //RootNode
+    400000: Camera Interest
+    400002: Mia:Head
+    400004: Mia:Hips
+    400006: Mia:LeftArm
+    400008: Mia:LeftArm_Dummy
+    400010: Mia:LeftArmRoll
+    400012: Mia:LeftFoot
+    400014: Mia:LeftForeArm
+    400016: Mia:LeftForeArmRoll
+    400018: Mia:LeftHand
+    400020: Mia:LeftHandIndex1
+    400022: Mia:LeftHandIndex2
+    400024: Mia:LeftHandIndex3
+    400026: Mia:LeftHandIndex4
+    400028: Mia:LeftHandMiddle1
+    400030: Mia:LeftHandMiddle2
+    400032: Mia:LeftHandMiddle3
+    400034: Mia:LeftHandMiddle4
+    400036: Mia:LeftHandPinky1
+    400038: Mia:LeftHandPinky2
+    400040: Mia:LeftHandPinky3
+    400042: Mia:LeftHandPinky4
+    400044: Mia:LeftHandRing1
+    400046: Mia:LeftHandRing2
+    400048: Mia:LeftHandRing3
+    400050: Mia:LeftHandRing4
+    400052: Mia:LeftHandThumb1
+    400054: Mia:LeftHandThumb2
+    400056: Mia:LeftHandThumb3
+    400058: Mia:LeftHandThumb4
+    400060: Mia:LeftHips_Dummy
+    400062: Mia:LeftLeg
+    400064: Mia:LeftLegRoll
+    400066: Mia:LeftShoulder
+    400068: Mia:LeftShoulder_Dummy
+    400070: Mia:LeftToeBase
+    400072: Mia:LeftUpLeg
+    400074: Mia:LeftUpLegRoll
+    400076: Mia:Master
+    400078: Mia:Neck
+    400080: Mia:Reference
+    400082: Mia:RightArm
+    400084: Mia:RightArm_Dummy
+    400086: Mia:RightArmRoll
+    400088: Mia:RightFoot
+    400090: Mia:RightForeArm
+    400092: Mia:RightForeArmRoll
+    400094: Mia:RightHand
+    400096: Mia:RightHandIndex1
+    400098: Mia:RightHandIndex2
+    400100: Mia:RightHandIndex3
+    400102: Mia:RightHandIndex4
+    400104: Mia:RightHandMiddle1
+    400106: Mia:RightHandMiddle2
+    400108: Mia:RightHandMiddle3
+    400110: Mia:RightHandMiddle4
+    400112: Mia:RightHandPinky1
+    400114: Mia:RightHandPinky2
+    400116: Mia:RightHandPinky3
+    400118: Mia:RightHandPinky4
+    400120: Mia:RightHandRing1
+    400122: Mia:RightHandRing2
+    400124: Mia:RightHandRing3
+    400126: Mia:RightHandRing4
+    400128: Mia:RightHandThumb1
+    400130: Mia:RightHandThumb2
+    400132: Mia:RightHandThumb3
+    400134: Mia:RightHandThumb4
+    400136: Mia:RightHips_Dummy
+    400138: Mia:RightLeg
+    400140: Mia:RightLegRoll
+    400142: Mia:RightShoulder
+    400144: Mia:RightShoulder_Dummy
+    400146: Mia:RightToeBase
+    400148: Mia:RightUpLeg
+    400150: Mia:RightUpLegRoll
+    400152: Mia:Root
+    400154: Mia:ServoControl
+    400156: Mia:Spine
+    400158: Mia:Spine1
+    400160: Mia:Spine2
+    400162: Mia:Spine_Dummy
+    400164: Mia_Ctrl:ChestEndEffector
+    400166: Mia_Ctrl:ChestOriginEffector
+    400168: Mia_Ctrl:Head
+    400170: Mia_Ctrl:HeadEffector
+    400172: Mia_Ctrl:Hips
+    400174: Mia_Ctrl:HipsEffector
+    400176: Mia_Ctrl:LeftAnkleEffector
+    400178: Mia_Ctrl:LeftAnkleEffectorPivot1
+    400180: Mia_Ctrl:LeftAnkleEffectorPivot2
+    400182: Mia_Ctrl:LeftArm
+    400184: Mia_Ctrl:LeftArmRoll
+    400186: Mia_Ctrl:LeftElbowEffector
+    400188: Mia_Ctrl:LeftFoot
+    400190: Mia_Ctrl:LeftFootEffector
+    400192: Mia_Ctrl:LeftForeArm
+    400194: Mia_Ctrl:LeftForeArmRoll
+    400196: Mia_Ctrl:LeftHand
+    400198: Mia_Ctrl:LeftHandIndex1
+    400200: Mia_Ctrl:LeftHandIndex2
+    400202: Mia_Ctrl:LeftHandIndex3
+    400204: Mia_Ctrl:LeftHandIndex4
+    400206: Mia_Ctrl:LeftHandIndexEffector
+    400208: Mia_Ctrl:LeftHandMiddle1
+    400210: Mia_Ctrl:LeftHandMiddle2
+    400212: Mia_Ctrl:LeftHandMiddle3
+    400214: Mia_Ctrl:LeftHandMiddle4
+    400216: Mia_Ctrl:LeftHandMiddleEffector
+    400218: Mia_Ctrl:LeftHandPinky1
+    400220: Mia_Ctrl:LeftHandPinky2
+    400222: Mia_Ctrl:LeftHandPinky3
+    400224: Mia_Ctrl:LeftHandPinky4
+    400226: Mia_Ctrl:LeftHandPinkyEffector
+    400228: Mia_Ctrl:LeftHandRing1
+    400230: Mia_Ctrl:LeftHandRing2
+    400232: Mia_Ctrl:LeftHandRing3
+    400234: Mia_Ctrl:LeftHandRing4
+    400236: Mia_Ctrl:LeftHandRingEffector
+    400238: Mia_Ctrl:LeftHandThumb1
+    400240: Mia_Ctrl:LeftHandThumb2
+    400242: Mia_Ctrl:LeftHandThumb3
+    400244: Mia_Ctrl:LeftHandThumb4
+    400246: Mia_Ctrl:LeftHandThumbEffector
+    400248: Mia_Ctrl:LeftHipEffector
+    400250: Mia_Ctrl:LeftKneeEffector
+    400252: Mia_Ctrl:LeftLeg
+    400254: Mia_Ctrl:LeftLegRoll
+    400256: Mia_Ctrl:LeftShoulder
+    400258: Mia_Ctrl:LeftShoulderEffector
+    400260: Mia_Ctrl:LeftToeBase
+    400262: Mia_Ctrl:LeftUpLeg
+    400264: Mia_Ctrl:LeftUpLegRoll
+    400266: Mia_Ctrl:LeftWristEffector
+    400268: Mia_Ctrl:Neck
+    400270: Mia_Ctrl:Reference
+    400272: Mia_Ctrl:RightAnkleEffector
+    400274: Mia_Ctrl:RightAnkleEffectorPivot1
+    400276: Mia_Ctrl:RightAnkleEffectorPivot2
+    400278: Mia_Ctrl:RightArm
+    400280: Mia_Ctrl:RightArmRoll
+    400282: Mia_Ctrl:RightElbowEffector
+    400284: Mia_Ctrl:RightFoot
+    400286: Mia_Ctrl:RightFootEffector
+    400288: Mia_Ctrl:RightForeArm
+    400290: Mia_Ctrl:RightForeArmRoll
+    400292: Mia_Ctrl:RightHand
+    400294: Mia_Ctrl:RightHandIndex1
+    400296: Mia_Ctrl:RightHandIndex2
+    400298: Mia_Ctrl:RightHandIndex3
+    400300: Mia_Ctrl:RightHandIndex4
+    400302: Mia_Ctrl:RightHandIndexEffector
+    400304: Mia_Ctrl:RightHandMiddle1
+    400306: Mia_Ctrl:RightHandMiddle2
+    400308: Mia_Ctrl:RightHandMiddle3
+    400310: Mia_Ctrl:RightHandMiddle4
+    400312: Mia_Ctrl:RightHandMiddleEffector
+    400314: Mia_Ctrl:RightHandPinky1
+    400316: Mia_Ctrl:RightHandPinky2
+    400318: Mia_Ctrl:RightHandPinky3
+    400320: Mia_Ctrl:RightHandPinky4
+    400322: Mia_Ctrl:RightHandPinkyEffector
+    400324: Mia_Ctrl:RightHandRing1
+    400326: Mia_Ctrl:RightHandRing2
+    400328: Mia_Ctrl:RightHandRing3
+    400330: Mia_Ctrl:RightHandRing4
+    400332: Mia_Ctrl:RightHandRingEffector
+    400334: Mia_Ctrl:RightHandThumb1
+    400336: Mia_Ctrl:RightHandThumb2
+    400338: Mia_Ctrl:RightHandThumb3
+    400340: Mia_Ctrl:RightHandThumb4
+    400342: Mia_Ctrl:RightHandThumbEffector
+    400344: Mia_Ctrl:RightHipEffector
+    400346: Mia_Ctrl:RightKneeEffector
+    400348: Mia_Ctrl:RightLeg
+    400350: Mia_Ctrl:RightLegRoll
+    400352: Mia_Ctrl:RightShoulder
+    400354: Mia_Ctrl:RightShoulderEffector
+    400356: Mia_Ctrl:RightToeBase
+    400358: Mia_Ctrl:RightUpLeg
+    400360: Mia_Ctrl:RightUpLegRoll
+    400362: Mia_Ctrl:RightWristEffector
+    400364: Mia_Ctrl:Spine
+    400366: Mia_Ctrl:Spine1
+    400368: Mia_Ctrl:Spine2
+    400370: //RootNode
+    7400000: Take 001
+    7400002: Take 003
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 003
+      takeName: Take 003
+      firstFrame: 0
+      lastFrame: 67
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera Interest
+        weight: 0
+      - path: Mia:Root
+        weight: 0
+      - path: Mia:Root/Mia:Master
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg/Mia:LeftLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg/Mia:LeftLegRoll/Mia:LeftFoot
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg/Mia:LeftLegRoll/Mia:LeftFoot/Mia:LeftToeBase
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg/Mia:RightLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg/Mia:RightLegRoll/Mia:RightFoot
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg/Mia:RightLegRoll/Mia:RightFoot/Mia:RightToeBase
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1/Mia:LeftHandIndex2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1/Mia:LeftHandIndex2/Mia:LeftHandIndex3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1/Mia:LeftHandIndex2/Mia:LeftHandIndex3/Mia:LeftHandIndex4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1/Mia:LeftHandMiddle2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1/Mia:LeftHandMiddle2/Mia:LeftHandMiddle3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1/Mia:LeftHandMiddle2/Mia:LeftHandMiddle3/Mia:LeftHandMiddle4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1/Mia:LeftHandPinky2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1/Mia:LeftHandPinky2/Mia:LeftHandPinky3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1/Mia:LeftHandPinky2/Mia:LeftHandPinky3/Mia:LeftHandPinky4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1/Mia:LeftHandRing2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1/Mia:LeftHandRing2/Mia:LeftHandRing3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1/Mia:LeftHandRing2/Mia:LeftHandRing3/Mia:LeftHandRing4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1/Mia:LeftHandThumb2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1/Mia:LeftHandThumb2/Mia:LeftHandThumb3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1/Mia:LeftHandThumb2/Mia:LeftHandThumb3/Mia:LeftHandThumb4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:Neck
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:Neck/Mia:Head
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1/Mia:RightHandIndex2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1/Mia:RightHandIndex2/Mia:RightHandIndex3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1/Mia:RightHandIndex2/Mia:RightHandIndex3/Mia:RightHandIndex4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1/Mia:RightHandMiddle2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1/Mia:RightHandMiddle2/Mia:RightHandMiddle3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1/Mia:RightHandMiddle2/Mia:RightHandMiddle3/Mia:RightHandMiddle4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1/Mia:RightHandPinky2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1/Mia:RightHandPinky2/Mia:RightHandPinky3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1/Mia:RightHandPinky2/Mia:RightHandPinky3/Mia:RightHandPinky4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1/Mia:RightHandRing2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1/Mia:RightHandRing2/Mia:RightHandRing3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1/Mia:RightHandRing2/Mia:RightHandRing3/Mia:RightHandRing4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1/Mia:RightHandThumb2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1/Mia:RightHandThumb2/Mia:RightHandThumb3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1/Mia:RightHandThumb2/Mia:RightHandThumb3/Mia:RightHandThumb4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:ServoControl
+        weight: 0
+      - path: Mia_Ctrl:Reference
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:ChestEndEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:ChestOriginEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:HeadEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg/Mia_Ctrl:LeftLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg/Mia_Ctrl:LeftLegRoll/Mia_Ctrl:LeftFoot
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg/Mia_Ctrl:LeftLegRoll/Mia_Ctrl:LeftFoot/Mia_Ctrl:LeftToeBase
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg/Mia_Ctrl:RightLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg/Mia_Ctrl:RightLegRoll/Mia_Ctrl:RightFoot
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg/Mia_Ctrl:RightLegRoll/Mia_Ctrl:RightFoot/Mia_Ctrl:RightToeBase
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1/Mia_Ctrl:LeftHandIndex2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1/Mia_Ctrl:LeftHandIndex2/Mia_Ctrl:LeftHandIndex3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1/Mia_Ctrl:LeftHandIndex2/Mia_Ctrl:LeftHandIndex3/Mia_Ctrl:LeftHandIndex4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1/Mia_Ctrl:LeftHandMiddle2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1/Mia_Ctrl:LeftHandMiddle2/Mia_Ctrl:LeftHandMiddle3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1/Mia_Ctrl:LeftHandMiddle2/Mia_Ctrl:LeftHandMiddle3/Mia_Ctrl:LeftHandMiddle4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1/Mia_Ctrl:LeftHandPinky2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1/Mia_Ctrl:LeftHandPinky2/Mia_Ctrl:LeftHandPinky3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1/Mia_Ctrl:LeftHandPinky2/Mia_Ctrl:LeftHandPinky3/Mia_Ctrl:LeftHandPinky4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1/Mia_Ctrl:LeftHandRing2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1/Mia_Ctrl:LeftHandRing2/Mia_Ctrl:LeftHandRing3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1/Mia_Ctrl:LeftHandRing2/Mia_Ctrl:LeftHandRing3/Mia_Ctrl:LeftHandRing4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1/Mia_Ctrl:LeftHandThumb2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1/Mia_Ctrl:LeftHandThumb2/Mia_Ctrl:LeftHandThumb3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1/Mia_Ctrl:LeftHandThumb2/Mia_Ctrl:LeftHandThumb3/Mia_Ctrl:LeftHandThumb4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:Neck
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:Neck/Mia_Ctrl:Head
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1/Mia_Ctrl:RightHandIndex2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1/Mia_Ctrl:RightHandIndex2/Mia_Ctrl:RightHandIndex3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1/Mia_Ctrl:RightHandIndex2/Mia_Ctrl:RightHandIndex3/Mia_Ctrl:RightHandIndex4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1/Mia_Ctrl:RightHandMiddle2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1/Mia_Ctrl:RightHandMiddle2/Mia_Ctrl:RightHandMiddle3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1/Mia_Ctrl:RightHandMiddle2/Mia_Ctrl:RightHandMiddle3/Mia_Ctrl:RightHandMiddle4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1/Mia_Ctrl:RightHandPinky2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1/Mia_Ctrl:RightHandPinky2/Mia_Ctrl:RightHandPinky3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1/Mia_Ctrl:RightHandPinky2/Mia_Ctrl:RightHandPinky3/Mia_Ctrl:RightHandPinky4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1/Mia_Ctrl:RightHandRing2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1/Mia_Ctrl:RightHandRing2/Mia_Ctrl:RightHandRing3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1/Mia_Ctrl:RightHandRing2/Mia_Ctrl:RightHandRing3/Mia_Ctrl:RightHandRing4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1/Mia_Ctrl:RightHandThumb2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1/Mia_Ctrl:RightHandThumb2/Mia_Ctrl:RightHandThumb3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1/Mia_Ctrl:RightHandThumb2/Mia_Ctrl:RightHandThumb3/Mia_Ctrl:RightHandThumb4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:HipsEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftAnkleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftAnkleEffectorPivot1
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftAnkleEffectorPivot2
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftElbowEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftFootEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandIndexEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandMiddleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandPinkyEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandRingEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandThumbEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHipEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftKneeEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftShoulderEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftWristEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightAnkleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightAnkleEffectorPivot1
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightAnkleEffectorPivot2
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightElbowEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightFootEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandIndexEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandMiddleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandPinkyEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandRingEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandThumbEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHipEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightKneeEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightShoulderEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightWristEffector
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera Interest
+        weight: 0
+      - path: Mia:Root
+        weight: 0
+      - path: Mia:Root/Mia:Master
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg/Mia:LeftLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg/Mia:LeftLegRoll/Mia:LeftFoot
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:LeftHips_Dummy/Mia:LeftUpLeg/Mia:LeftUpLegRoll/Mia:LeftLeg/Mia:LeftLegRoll/Mia:LeftFoot/Mia:LeftToeBase
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg/Mia:RightLegRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg/Mia:RightLegRoll/Mia:RightFoot
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:RightHips_Dummy/Mia:RightUpLeg/Mia:RightUpLegRoll/Mia:RightLeg/Mia:RightLegRoll/Mia:RightFoot/Mia:RightToeBase
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1/Mia:LeftHandIndex2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1/Mia:LeftHandIndex2/Mia:LeftHandIndex3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandIndex1/Mia:LeftHandIndex2/Mia:LeftHandIndex3/Mia:LeftHandIndex4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1/Mia:LeftHandMiddle2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1/Mia:LeftHandMiddle2/Mia:LeftHandMiddle3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandMiddle1/Mia:LeftHandMiddle2/Mia:LeftHandMiddle3/Mia:LeftHandMiddle4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1/Mia:LeftHandPinky2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1/Mia:LeftHandPinky2/Mia:LeftHandPinky3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandPinky1/Mia:LeftHandPinky2/Mia:LeftHandPinky3/Mia:LeftHandPinky4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1/Mia:LeftHandRing2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1/Mia:LeftHandRing2/Mia:LeftHandRing3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandRing1/Mia:LeftHandRing2/Mia:LeftHandRing3/Mia:LeftHandRing4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1/Mia:LeftHandThumb2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1/Mia:LeftHandThumb2/Mia:LeftHandThumb3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:LeftShoulder_Dummy/Mia:LeftShoulder/Mia:LeftArm_Dummy/Mia:LeftArm/Mia:LeftArmRoll/Mia:LeftForeArm/Mia:LeftForeArmRoll/Mia:LeftHand/Mia:LeftHandThumb1/Mia:LeftHandThumb2/Mia:LeftHandThumb3/Mia:LeftHandThumb4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:Neck
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:Neck/Mia:Head
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1/Mia:RightHandIndex2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1/Mia:RightHandIndex2/Mia:RightHandIndex3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandIndex1/Mia:RightHandIndex2/Mia:RightHandIndex3/Mia:RightHandIndex4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1/Mia:RightHandMiddle2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1/Mia:RightHandMiddle2/Mia:RightHandMiddle3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandMiddle1/Mia:RightHandMiddle2/Mia:RightHandMiddle3/Mia:RightHandMiddle4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1/Mia:RightHandPinky2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1/Mia:RightHandPinky2/Mia:RightHandPinky3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandPinky1/Mia:RightHandPinky2/Mia:RightHandPinky3/Mia:RightHandPinky4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1/Mia:RightHandRing2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1/Mia:RightHandRing2/Mia:RightHandRing3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandRing1/Mia:RightHandRing2/Mia:RightHandRing3/Mia:RightHandRing4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1/Mia:RightHandThumb2
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1/Mia:RightHandThumb2/Mia:RightHandThumb3
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:RightArm_Dummy/Mia:RightArm/Mia:RightArmRoll/Mia:RightForeArm/Mia:RightForeArmRoll/Mia:RightHand/Mia:RightHandThumb1/Mia:RightHandThumb2/Mia:RightHandThumb3/Mia:RightHandThumb4
+        weight: 0
+      - path: Mia:Root/Mia:Master/Mia:Reference/Mia:Hips/Mia:Spine_Dummy/Mia:Spine/Mia:Spine1/Mia:Spine2/Mia:RightShoulder_Dummy/Mia:RightShoulder/Mia:ServoControl
+        weight: 0
+      - path: Mia_Ctrl:Reference
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:ChestEndEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:ChestOriginEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:HeadEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg/Mia_Ctrl:LeftLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg/Mia_Ctrl:LeftLegRoll/Mia_Ctrl:LeftFoot
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:LeftUpLeg/Mia_Ctrl:LeftUpLegRoll/Mia_Ctrl:LeftLeg/Mia_Ctrl:LeftLegRoll/Mia_Ctrl:LeftFoot/Mia_Ctrl:LeftToeBase
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg/Mia_Ctrl:RightLegRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg/Mia_Ctrl:RightLegRoll/Mia_Ctrl:RightFoot
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:RightUpLeg/Mia_Ctrl:RightUpLegRoll/Mia_Ctrl:RightLeg/Mia_Ctrl:RightLegRoll/Mia_Ctrl:RightFoot/Mia_Ctrl:RightToeBase
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1/Mia_Ctrl:LeftHandIndex2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1/Mia_Ctrl:LeftHandIndex2/Mia_Ctrl:LeftHandIndex3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandIndex1/Mia_Ctrl:LeftHandIndex2/Mia_Ctrl:LeftHandIndex3/Mia_Ctrl:LeftHandIndex4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1/Mia_Ctrl:LeftHandMiddle2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1/Mia_Ctrl:LeftHandMiddle2/Mia_Ctrl:LeftHandMiddle3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandMiddle1/Mia_Ctrl:LeftHandMiddle2/Mia_Ctrl:LeftHandMiddle3/Mia_Ctrl:LeftHandMiddle4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1/Mia_Ctrl:LeftHandPinky2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1/Mia_Ctrl:LeftHandPinky2/Mia_Ctrl:LeftHandPinky3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandPinky1/Mia_Ctrl:LeftHandPinky2/Mia_Ctrl:LeftHandPinky3/Mia_Ctrl:LeftHandPinky4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1/Mia_Ctrl:LeftHandRing2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1/Mia_Ctrl:LeftHandRing2/Mia_Ctrl:LeftHandRing3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandRing1/Mia_Ctrl:LeftHandRing2/Mia_Ctrl:LeftHandRing3/Mia_Ctrl:LeftHandRing4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1/Mia_Ctrl:LeftHandThumb2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1/Mia_Ctrl:LeftHandThumb2/Mia_Ctrl:LeftHandThumb3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:LeftShoulder/Mia_Ctrl:LeftArm/Mia_Ctrl:LeftArmRoll/Mia_Ctrl:LeftForeArm/Mia_Ctrl:LeftForeArmRoll/Mia_Ctrl:LeftHand/Mia_Ctrl:LeftHandThumb1/Mia_Ctrl:LeftHandThumb2/Mia_Ctrl:LeftHandThumb3/Mia_Ctrl:LeftHandThumb4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:Neck
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:Neck/Mia_Ctrl:Head
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1/Mia_Ctrl:RightHandIndex2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1/Mia_Ctrl:RightHandIndex2/Mia_Ctrl:RightHandIndex3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandIndex1/Mia_Ctrl:RightHandIndex2/Mia_Ctrl:RightHandIndex3/Mia_Ctrl:RightHandIndex4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1/Mia_Ctrl:RightHandMiddle2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1/Mia_Ctrl:RightHandMiddle2/Mia_Ctrl:RightHandMiddle3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandMiddle1/Mia_Ctrl:RightHandMiddle2/Mia_Ctrl:RightHandMiddle3/Mia_Ctrl:RightHandMiddle4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1/Mia_Ctrl:RightHandPinky2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1/Mia_Ctrl:RightHandPinky2/Mia_Ctrl:RightHandPinky3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandPinky1/Mia_Ctrl:RightHandPinky2/Mia_Ctrl:RightHandPinky3/Mia_Ctrl:RightHandPinky4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1/Mia_Ctrl:RightHandRing2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1/Mia_Ctrl:RightHandRing2/Mia_Ctrl:RightHandRing3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandRing1/Mia_Ctrl:RightHandRing2/Mia_Ctrl:RightHandRing3/Mia_Ctrl:RightHandRing4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1/Mia_Ctrl:RightHandThumb2
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1/Mia_Ctrl:RightHandThumb2/Mia_Ctrl:RightHandThumb3
+        weight: 1
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:Hips/Mia_Ctrl:Spine/Mia_Ctrl:Spine1/Mia_Ctrl:Spine2/Mia_Ctrl:RightShoulder/Mia_Ctrl:RightArm/Mia_Ctrl:RightArmRoll/Mia_Ctrl:RightForeArm/Mia_Ctrl:RightForeArmRoll/Mia_Ctrl:RightHand/Mia_Ctrl:RightHandThumb1/Mia_Ctrl:RightHandThumb2/Mia_Ctrl:RightHandThumb3/Mia_Ctrl:RightHandThumb4
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:HipsEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftAnkleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftAnkleEffectorPivot1
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftAnkleEffectorPivot2
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftElbowEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftFootEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandIndexEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandMiddleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandPinkyEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandRingEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHandThumbEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftHipEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftKneeEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftShoulderEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:LeftWristEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightAnkleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightAnkleEffectorPivot1
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightAnkleEffectorPivot2
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightElbowEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightFootEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandIndexEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandMiddleEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandPinkyEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandRingEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHandThumbEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightHipEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightKneeEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightShoulderEffector
+        weight: 0
+      - path: Mia_Ctrl:Reference/Mia_Ctrl:RightWristEffector
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  userData: 

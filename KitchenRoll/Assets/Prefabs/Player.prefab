@@ -206,7 +206,6 @@ GameObject:
   - 111: {fileID: 11100000}
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -1027,7 +1026,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: -12, z: -10}
+  m_LocalPosition: {x: 117.230713, y: 96.8777695, z: 0}
   m_LocalScale: {x: 4.27551603, y: 4.27551603, z: 4.27551603}
   m_Children:
   - {fileID: 400008}
@@ -1597,19 +1596,7 @@ MonoBehaviour:
   rotateSpeed: 500
   trotAfterSeconds: 3
   canJump: 1
-  isControllable: 0
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e8fa64a70c57944abf3d3cc6afafbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snooped: 0
+  isControllable: 1
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

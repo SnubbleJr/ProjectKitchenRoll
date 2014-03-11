@@ -177,18 +177,27 @@ public class RayCastTorch : MonoBehaviour {
 	{
 		//gives back the maximum didstance each vector can travel, and then converts them into global vectors.
 		RaycastHit ray;
-		float rayDistance, absorbtionValue;
+		float rayDistance, absorbtionValue; 
 		for (int i=0; i<vecArr.Length; i++)
 		{
 			if (Physics.Raycast (transform.position, vecArr[i], out ray, maxSize))
 			{
 				rayDistance = ray.distance/maxSize;
-				absorbtionValue = (1 - rayDistance) * ray.collider.gameObject.GetComponent<Absorbtion>().absobtion;
+				try
+				{
+					absorbtionValue = ray.collider.gameObject.GetComponent<Absorbtion>().absobtion;
+				}
+				catch 
+				{
+					absorbtionValue = 1f;
+				}
+				
+				absorbtionValue *= (1 - rayDistance);
 
 				//rebound code
 				//StartCoroutine( subTorch(transform.TransformPoint(vecArr[i]*(rayDistance*0.9f)), (vecArr[i].magnitude - ray.distance) * (1 - absorbtionValue)));
 
-				if ((rayDistance + absorbtionValue) < 1)
+				if ((rayDistance + absorbtionValue) < 1f)
 				{
 					vecArr[i] *= (rayDistance + absorbtionValue);
 				}
