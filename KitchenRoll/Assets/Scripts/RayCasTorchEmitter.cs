@@ -5,8 +5,8 @@ public class RayCasTorchEmitter : MonoBehaviour {
 	
 	//default values
 	public GameObject childTorch;
-	public GameObject torchBG;
 	public float torchesPerSecond = 1f;
+	public float delay = 0f;
 	public float maxSize = 5;
 	public float growRate = 0.01f;
 	public int castFrequency = 64	;
@@ -23,7 +23,7 @@ public class RayCasTorchEmitter : MonoBehaviour {
 	void Start () {
 		range = 75;	
 		player = GameObject.FindGameObjectWithTag ("Player");
-		InvokeRepeating("emitTorch", 2, (1/torchesPerSecond));
+		InvokeRepeating("emitTorch", delay, (1/torchesPerSecond));
 	}
 
 	// Update is called once per frame
@@ -47,7 +47,6 @@ public class RayCasTorchEmitter : MonoBehaviour {
 				torchScript.setCone (cone);
 				torchScript.setConeFrom (coneFrom);
 				torchScript.setConeTo (coneTo);
-				torchScript.setTorchBG (torchBG);
 			}
 			else
 			{

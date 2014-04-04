@@ -19,8 +19,7 @@ public class RayCastTorch : MonoBehaviour {
 
 	ScreenGrabber mainCameraGrabber;
 
-	Mesh mesh;
-
+	Mesh mesh;	
 	Vector3[] maxVecArr;
 	Vector3[] vecArr;
 	Vector2[] uvArr;
@@ -53,12 +52,12 @@ public class RayCastTorch : MonoBehaviour {
 		//moving it to the top plane
 		offset.z = mainCameraGrabber.getZOffset ();
 		transform.position += offset;
-		
+
 		renderer.enabled = true;
 
 		make ();
 
-		//makeBG();
+		makeBG();
 
 	}
 	
@@ -75,6 +74,7 @@ public class RayCastTorch : MonoBehaviour {
 			timerSize += currentGrowRate;
 			updateTorch();
 		}
+
 	}
 
 	void make()
@@ -85,7 +85,7 @@ public class RayCastTorch : MonoBehaviour {
 		mesh = meshMaker(vecArr, uvArr, triArr);
 		Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 
-		debugDraw(vecArr);
+		//debugDraw(vecArr);
 	}
 
 	void OnDestroy() {
@@ -115,11 +115,15 @@ public class RayCastTorch : MonoBehaviour {
 		float rate = Time.deltaTime*destructionTime;
 
 		renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
+		torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
 
-		if (renderer.material.color.r <= 0.01f)
+		if (renderer.material.color.r <= 0.015f)
 		{
+			DestroyImmediate(renderer.material);
 			DestroyImmediate(gameObject);
+			DestroyImmediate(torchBG);
 		}
+
 	}
 
 	void updateTorch()
@@ -228,7 +232,7 @@ public class RayCastTorch : MonoBehaviour {
 	{
 		//updatees the vec2 array given, growing it until it hits maxsize or collision
 
-		float sizeRatio = vecArr[1].magnitude/maxVecArr[1].magnitude;
+		//float sizeRatio = vecArr[1].magnitude/maxVecArr[1].magnitude;
 
 		for (int i=0; i<uvArr.Length; i++)
 		{
@@ -290,20 +294,16 @@ public class RayCastTorch : MonoBehaviour {
 			torchScript.setSpawnAgain (false);
 		}
 	}
-
+	
 	void makeBG()
 	{
-		
-		GameObject BG = Instantiate (torchBG, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
-		RayCastTorchBackground BGScript = BG.GetComponent<RayCastTorchBackground>();
-		BGScript.setMaxSize (maxSize);
-		BGScript.setGrowRate (growRate);
-		BGScript.setCastFrequency (castFrequency);
-		BGScript.setDestructionTime (destructionTime);
-		BGScript.setOffset (offset);
-		BGScript.setCone (cone);
-		BGScript.setConeFrom (coneFrom);
-		BGScript.setConeTo (coneTo);
+		torchBG = Instantiate(torchBG, transform.position, Quaternion.identity) as GameObject;
+
+		RayCastTorchBackground scriptBG = torchBG.GetComponent<RayCastTorchBackground>();
+
+		scriptBG.setVecArr(vecArrMake(maxSize));
+		scriptBG.setMaxSize(maxSize);
+		scriptBG.setCastFrequency(castFrequency);
 
 	}
 
