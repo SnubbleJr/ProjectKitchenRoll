@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\smartscarf\unity\smartscarf\Assets\User.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Ray Cast Torch Scripts\RayCastTorch.cs">
     <Files>
-      <File FileName="..\..\smartscarf\unity\smartscarf\Assets\User.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\Camera Scripts\DisplayCameraOffset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Ray Cast Torch Scripts\RayCastTorchBackground.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Camera Scripts\Follow2D.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Ray Cast Torch Scripts\RayCastTorch.cs" Line="251" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

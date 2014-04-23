@@ -14,8 +14,8 @@ PlayerSettings:
   productName: KitchenRoll
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  defaultScreenWidth: 1024
-  defaultScreenHeight: 768
+  defaultScreenWidth: 1280
+  defaultScreenHeight: 600
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_RenderingPath: 1
@@ -43,7 +43,7 @@ PlayerSettings:
   enableHWStatistics: 1
   usePlayerLog: 1
   stripPhysics: 0
-  forceSingleInstance: 0
+  forceSingleInstance: 1
   resizableWindow: 0
   useMacAppStoreValidation: 0
   gpuSkinning: 0
