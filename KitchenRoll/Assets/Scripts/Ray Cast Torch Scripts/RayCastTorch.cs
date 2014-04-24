@@ -6,19 +6,25 @@ public class RayCastTorch : MonoBehaviour {
 
 	public GameObject torchBG;
 
+	public bool alternateVersion = false;
+
 	//default values
 	private float maxSize = 15;
 	private float growRate = 0.1f;
-	private int castFrequency = 32;
+	private int castFrequency = 64;
 	private float destructionTime = 2f;
 	private Vector3 offset;
 	private bool spawnAgain = true;
 	private bool cone = false;
 	private float coneTo, coneFrom;
 
-	ScreenGrabber mainCameraGrabber;
+	MainCameraBehaviour mainCamerBehaviour;
+	RenderTextureGrabber mainCameraGrabber;
 
-	Mesh mesh;	
+	RayCastTorchBackground torchBGScript;
+
+
+	Mesh mesh = new Mesh();	
 	Vector3[] maxVecArr;
 	Vector3[] vecArr;
 	Vector2[] uvArr;
@@ -30,17 +36,18 @@ public class RayCastTorch : MonoBehaviour {
 	
 	void Start () {
 
-		mainCameraGrabber = Camera.main.GetComponent<ScreenGrabber>();
-
+		mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
+		mainCameraGrabber = Camera.main.GetComponent<RenderTextureGrabber>();
 		offset = DisplayCameraOffset.offset;
 
 		makeTorch();
 
 		//moving it to the top plane
-		offset.z = mainCameraGrabber.getZOffset ();
+		offset.z = mainCamerBehaviour.getZOffset ();
 		transform.position += offset;
 
 		makeBG();
+		updateTorch();
  
 	}
 	
@@ -72,50 +79,66 @@ public class RayCastTorch : MonoBehaviour {
 			coneTo = 360f;
 			coneFrom = 0f;
 		}
-		
-		//makes a mesh, of viable size and fedelity
-		//it is altered by a ray trace
 
 		createArrays();
 		
 		renderer.enabled = true;
-		
-		updateTorch();
-		
+
 		setTexture();
+
+		meshUpdate(vecArr, uvArr, triArr);
+		Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 	}
 
 	void updateTorch()
 	{
-		vecArr = currentVecArrUpdate(vecArr);
-		//vecArr = maxVecArr;	
-		uvArr = currentUvArrUpdate(uvArr);
-		mesh = meshMaker(vecArr, uvArr, triArr);
-		Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
+		
+		if (!alternateVersion)
+		{
+			vecArr = currentVecArrUpdate(vecArr);
+			uvArr = currentUvArrUpdate(uvArr);
 
-		updateBG();
+			updateBG();
+		}
+
+		meshUpdate(vecArr, uvArr, triArr);
+		//Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 
 		//debugDraw(vecArr);
 	}
 
 	void OnDestroy() {
+		DestroyImmediate(mesh);
 		DestroyImmediate(renderer.material);
+		DestroyImmediate(torchBG);
 	}
 
 	void setTexture()
 	{
-		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime);
+		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime*1.2f);
+		mainCamerBehaviour.setTimer(destructionTime*1.2f);
 	}
 
 	void createArrays()
 	{
-		vecArr = vecArrMake(1.0f);
+
+		
 		maxVecArr = vecArrMake(maxSize);	
 		maxVecArr = collisionChecking(maxVecArr);
-		
+
+		if(alternateVersion)
+		{
+			vecArr = maxVecArr;	
+		}
+		else
+		{
+			vecArr = vecArrMake(1.0f);
+		}
+
 		uvArr = uvArrMake(vecArr);
 
 		triArr = triArrMake();
+
 	}
 
 	void fade()
@@ -126,13 +149,7 @@ public class RayCastTorch : MonoBehaviour {
 		renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
 		torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
 
-		if (renderer.material.color.r <= 0.015f)
-		{
-			DestroyImmediate(renderer.material);
-			DestroyImmediate(gameObject);
-			DestroyImmediate(torchBG);
-		}
-
+		Destroy(gameObject, destructionTime);
 	}
 
 	Vector3[] vecArrMake(float magnitude)
@@ -161,7 +178,7 @@ public class RayCastTorch : MonoBehaviour {
 
 		for (int i=0; i<vecArr.Length; i++)
 		{
-			uv[i] = mainCameraGrabber.uvFromWorldToScreen(transform.TransformPoint(vecArr[i])-offset);
+			uv[i] = mainCamerBehaviour.uvFromWorldToScreen(transform.TransformPoint(vecArr[i])-offset);
 		}
 		return uv;
 	}
@@ -239,6 +256,10 @@ public class RayCastTorch : MonoBehaviour {
 
 	Vector2[] currentUvArrUpdate(Vector2[] uvArr)
 	{
+		//placeholder solution
+		return uvArrMake(vecArr);
+
+		/*
 		//updatees the vec2 array given, growing it until it hits maxsize or collision
 
 		//float sizeRatio = vecArr[1].magnitude/maxVecArr[1].magnitude;
@@ -256,18 +277,16 @@ public class RayCastTorch : MonoBehaviour {
 			}
 			//print(i + ". core: " + coreUvArr[i] + ", current: " + uvArr[i] + ", max: " + maxUvArr[i] + ", ratio: " + sizeRatio);
 		}
-		return uvArr;
+		return uvArr;*/
 	}
 
-	public Mesh meshMaker(Vector3[] newVertices, Vector2[] newUV, int[] newTriangles)
+	public void meshUpdate(Vector3[] newVertices, Vector2[] newUV, int[] newTriangles)
 	{
-		Mesh mesh = new Mesh();
 		GetComponent<MeshFilter>().mesh = mesh;
 		mesh.vertices = newVertices;
 		mesh.uv = newUV;
 		mesh.triangles = newTriangles;
 		mesh.RecalculateNormals();
-		return mesh;
 	}
 
 	void debugDraw(Vector3[] vecArr)
@@ -307,17 +326,20 @@ public class RayCastTorch : MonoBehaviour {
 	void makeBG()
 	{
 		torchBG = Instantiate(torchBG, transform.position, Quaternion.identity) as GameObject;
+		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
+
+		torchBGScript.setAlternateVersion(alternateVersion);
 
 		updateBG();
 	}
 
 	void updateBG()
 	{
-		RayCastTorchBackground scriptBG = torchBG.GetComponent<RayCastTorchBackground>();
+		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
 
-		scriptBG.setVecArr(vecArr);
-		scriptBG.setMaxSize(maxSize);
-		scriptBG.setCastFrequency(castFrequency);
+		torchBGScript.setVecArr(vecArr);
+		torchBGScript.setMaxSize(maxSize);
+		torchBGScript.setCastFrequency(castFrequency);
 	}
 
 	public Mesh getMesh()

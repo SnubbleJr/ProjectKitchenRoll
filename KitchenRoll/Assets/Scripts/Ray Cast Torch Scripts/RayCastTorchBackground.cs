@@ -4,26 +4,17 @@ using System.Collections;
 	
 public class RayCastTorchBackground : MonoBehaviour {
 
+	private bool alternateVersion;
+
 	LineRenderer BG;
 
-	//default values
 	private float maxSize ;
 	private int castFrequency;
-	private float destructionTime = 2f;
 	private Vector3 offset;
-	private bool spawnAgain = true;
-	private bool cone = false;
-	private float coneFrom, coneTo;
-	
-	ScreenGrabber mainCameraGrabber;
 
 	float growRateBG;
 
 	Vector3[] vecArr;
-
-	private float currentGrowRate;
-	private float currentSize;
-	private float timerSize;
 
 	void Start () {
 
@@ -49,13 +40,19 @@ public class RayCastTorchBackground : MonoBehaviour {
 		//growRateBG *= 0.5f;
 		//growRateBG *= 0.7f;
 		
-		//main//growRateBG *= 1.007f;
+		if(alternateVersion)
+		{
+			growRateBG *= 1.007f;
+			setScale(growRateBG);
+		}
+		else
+		{
+			setScale();
+		}
 
 		//BG.SetWidth(growRateBG, growRateBG);
-
 		//transform.localScale += new Vector3(growRateBG,growRateBG,growRateBG);
-		//main//setScale(growRateBG);
-		setScale();
+
 	}
 
 	public void setScale(float scale)
@@ -94,17 +91,7 @@ public class RayCastTorchBackground : MonoBehaviour {
 	{
 		return castFrequency;
 	}
-	
-	public void setDestructionTime(float time)
-	{
-		destructionTime = time;
-	}
-	
-	public float getDestructionTime()
-	{
-		return destructionTime;
-	}
-	
+
 	public void setOffset(Vector3 off)
 	{
 		offset = off;
@@ -114,47 +101,7 @@ public class RayCastTorchBackground : MonoBehaviour {
 	{
 		return offset;
 	}
-	
-	public void setSpawnAgain(bool spawn)
-	{
-		spawnAgain = spawn;
-	}
-	
-	public bool getSpawnAgain()
-	{
-		return spawnAgain;
-	}
-	
-	public void setCone(bool con)
-	{
-		cone = con;
-	}
-	
-	public bool getCone()
-	{
-		return cone;
-	}
-	
-	public void setConeFrom(float from)
-	{
-		coneFrom = from;
-	}
-	
-	public float getConeFrom()
-	{
-		return coneFrom;
-	}
-	
-	public void setConeTo(float to)
-	{
-		coneTo = to;
-	}
-	
-	public float getConeTo()
-	{
-		return coneTo;
-	}
-	
+
 	public void setVecArr(Vector3[] arr)
 	{
 		vecArr = arr;
@@ -163,6 +110,16 @@ public class RayCastTorchBackground : MonoBehaviour {
 	public Vector3[] getVecArr()
 	{
 		return vecArr;
+	}
+
+	public void setAlternateVersion(bool AV)
+	{
+		alternateVersion = AV;
+	}
+	
+	public bool getAlternateVersion()
+	{
+		return alternateVersion;
 	}
 
 }
