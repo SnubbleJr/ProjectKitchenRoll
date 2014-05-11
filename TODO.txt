@@ -1,0 +1,17 @@
+invert rbg coluours: if not library, inverted is 255 - original
+
+reinmpliment rebound script
+
+optimising RT grabber - dlete RT's not being used _ if more than 2 unsed exsist, delete until 1 remains
+
+UV's never change, just get one uv arr made at run time from the camera, with MAXVECARR and then keep it there
+	- make them before texture is given, if some nulls are returned or something (if it doesn't break) then don't get the texture?
+	
+	---THIS IS GETTING HARDER, MAYBE, I JUST MAKE THE MESH NOT GROW, AND JUST GROW THE UVS AROUND IT?
+		I CAN ALSO FREE UP THE BG TORCH TO KEEP GOING, OR AT LEAST LOOK NICER?
+	
+	Studio names?
+	
+	Ktichen Roll
+	
+	Me and Her

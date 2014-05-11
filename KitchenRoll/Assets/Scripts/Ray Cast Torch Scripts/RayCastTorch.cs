@@ -10,7 +10,7 @@ public class RayCastTorch : MonoBehaviour {
 
 	//default values
 	private float maxSize = 15;
-	private float growRate = 0.1f;
+	private float growRate = 0.01f;
 	private int castFrequency = 64;
 	private float destructionTime = 2f;
 	private Vector3 offset;
@@ -18,11 +18,12 @@ public class RayCastTorch : MonoBehaviour {
 	private bool cone = false;
 	private float coneTo, coneFrom;
 
-	MainCameraBehaviour mainCamerBehaviour;
+    MainCameraBehaviour mainCamerBehaviour, RTCamerBehaviour;
 	RenderTextureGrabber mainCameraGrabber;
 
 	RayCastTorchBackground torchBGScript;
 
+    double uvVecRatioX, uvVecRatioY, uvVecRatioMaxX, uvVecRatioMaxY;
 
 	Mesh mesh = new Mesh();	
 	Vector3[] maxVecArr;
@@ -36,9 +37,11 @@ public class RayCastTorch : MonoBehaviour {
 	
 	void Start () {
 
-		mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
+        mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
 		mainCameraGrabber = Camera.main.GetComponent<RenderTextureGrabber>();
-		offset = DisplayCameraOffset.offset;
+        offset = DisplayCameraOffset.offset;
+
+        setTexture();
 
 		makeTorch();
 
@@ -46,7 +49,7 @@ public class RayCastTorch : MonoBehaviour {
 		offset.z = mainCamerBehaviour.getZOffset ();
 		transform.position += offset;
 
-		makeBG();
+        makeBG();
 		updateTorch();
  
 	}
@@ -62,7 +65,12 @@ public class RayCastTorch : MonoBehaviour {
 			currentGrowRate += growRate;
 			currentSize += growRate;
 			timerSize += currentGrowRate;
-			updateTorch();
+
+            if (!alternateVersion)
+            {
+                updateTorch();
+                updateBG();
+            }
 		}
 	
 	}
@@ -84,24 +92,16 @@ public class RayCastTorch : MonoBehaviour {
 		
 		renderer.enabled = true;
 
-		setTexture();
-
 		meshUpdate(vecArr, uvArr, triArr);
 		Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 	}
 
 	void updateTorch()
 	{
-		
-		if (!alternateVersion)
-		{
-			vecArr = currentVecArrUpdate(vecArr);
-			uvArr = currentUvArrUpdate(uvArr);
+        vecArr = currentVecArrUpdate(vecArr);
+        uvArr = uvArrMake(vecArr);
+        meshUpdate(vecArr, uvArr, triArr);
 
-			updateBG();
-		}
-
-		meshUpdate(vecArr, uvArr, triArr);
 		//Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 
 		//debugDraw(vecArr);
@@ -114,15 +114,15 @@ public class RayCastTorch : MonoBehaviour {
 	}
 
 	void setTexture()
-	{
-		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime*1.2f);
-		mainCamerBehaviour.setTimer(destructionTime*1.2f);
+    {
+        RTCamerBehaviour = mainCameraGrabber.getCurrentCameraBehaviour();
+
+		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime*1.25f);
+		mainCamerBehaviour.setTimer(destructionTime*1.25f);
 	}
 
 	void createArrays()
 	{
-
-		
 		maxVecArr = vecArrMake(maxSize);	
 		maxVecArr = collisionChecking(maxVecArr);
 
@@ -136,6 +136,15 @@ public class RayCastTorch : MonoBehaviour {
 		}
 
 		uvArr = uvArrMake(vecArr);
+
+        int i = 1;
+
+        Vector2[] mazUvArr = uvArrMake(maxVecArr);
+
+        uvVecRatioX = uvArr[i].x / vecArr[i].x;
+        uvVecRatioY = uvArr[i].y / vecArr[i].y;
+        uvVecRatioMaxX = mazUvArr[i].x / maxVecArr[i].x;
+        uvVecRatioY = mazUvArr[i].y / maxVecArr[i].y;
 
 		triArr = triArrMake();
 
@@ -178,7 +187,7 @@ public class RayCastTorch : MonoBehaviour {
 
 		for (int i=0; i<vecArr.Length; i++)
 		{
-			uv[i] = mainCamerBehaviour.uvFromWorldToScreen(transform.TransformPoint(vecArr[i])-offset);
+			uv[i] = RTCamerBehaviour.uvFromWorldToScreen(transform.TransformPoint(vecArr[i])-offset);
 		}
 		return uv;
 	}
@@ -253,33 +262,7 @@ public class RayCastTorch : MonoBehaviour {
 		}
 		return vecArr;
 	}
-
-	Vector2[] currentUvArrUpdate(Vector2[] uvArr)
-	{
-		//placeholder solution
-		return uvArrMake(vecArr);
-
-		/*
-		//updatees the vec2 array given, growing it until it hits maxsize or collision
-
-		//float sizeRatio = vecArr[1].magnitude/maxVecArr[1].magnitude;
-
-		for (int i=0; i<uvArr.Length; i++)
-		{
-			float uvArrRatios = vecArr[i].magnitude / uvArr[i].magnitude;
-			if (uvArr[i].magnitude < (vecArr[i] * uvArrRatios).magnitude)
-			{
-				uvArr[i] = coreUvArr[i] * (1 + currentSize);
-			}
-			else
-			{
-				uvArr[i] = maxUvArr[i];
-			}
-			//print(i + ". core: " + coreUvArr[i] + ", current: " + uvArr[i] + ", max: " + maxUvArr[i] + ", ratio: " + sizeRatio);
-		}
-		return uvArr;*/
-	}
-
+    
 	public void meshUpdate(Vector3[] newVertices, Vector2[] newUV, int[] newTriangles)
 	{
 		GetComponent<MeshFilter>().mesh = mesh;
@@ -315,6 +298,7 @@ public class RayCastTorch : MonoBehaviour {
 			yield return new WaitForEndOfFrame();
 			GameObject torch = Instantiate (this.gameObject, location, transform.rotation) as GameObject;
 			RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
+            //torch.transform.parent = transform;
 			torchScript.setMaxSize (size);
 			torchScript.setGrowRate (growRate);
 			torchScript.setCastFrequency (childFreq);
@@ -327,6 +311,7 @@ public class RayCastTorch : MonoBehaviour {
 	{
 		torchBG = Instantiate(torchBG, transform.position, Quaternion.identity) as GameObject;
 		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
+        torchBG.transform.parent = transform;
 
 		torchBGScript.setAlternateVersion(alternateVersion);
 

@@ -4,27 +4,36 @@ using System.Collections.Generic;
 
 public class RenderTextureGrabber : MonoBehaviour {
 
+    //Each RT has:
+    //A Texture, that is cloned when asked for
+    //A Camera, which give accurate uv conversions
+    //A Lock, which stops the texture from updating
 	[System.Serializable]
 	public class RT
 	{
 		public RenderTexture renderTexture;
+        public GameObject RTCamera;
 		public bool locked;
 
 		public RT()
-		{
+        {
 			renderTexture = new RenderTexture(1024,1024,24);
 			locked = false;
 		}
 
 	}
 
-	private List<RT> RTList;
-	private int RTIndex, lockCount;
+    public GameObject rtCamera;
 
+	private List<RT> RTList;
+    private List<GameObject> cameraList;
+	private int RTIndex, lockCount;
+    
 	// Use this for initialization
 	void Start () {
 
 		RTList = new List<RT>();
+        cameraList = new List<GameObject>();
 		RTIndex = 0;
 		lockCount = 0;
 
@@ -36,13 +45,13 @@ public class RenderTextureGrabber : MonoBehaviour {
 		if(RTList.Count <= lockCount)
 		{
 			RTList.Add(new RT());
+            cameraList.Add(Instantiate(rtCamera, transform.position, transform.rotation) as GameObject);
 		}
 		cycleRT();
 	}
 
 	// Update is called once per frame
 	void Update () {
-
 	}
 
 	void cycleRT()
@@ -53,6 +62,7 @@ public class RenderTextureGrabber : MonoBehaviour {
 
 	void RTSetActive()
 	{
+        cameraList[RTIndex].transform.position = transform.position;
 		RenderTexture.active = RTList[RTIndex].renderTexture;
 	}
 
@@ -62,6 +72,11 @@ public class RenderTextureGrabber : MonoBehaviour {
 		StartCoroutine(unlockRT(RTIndex, torchDestructionTime));
 		return RTList[RTIndex].renderTexture;
 	}
+
+    public MainCameraBehaviour getCurrentCameraBehaviour()
+    {
+        return cameraList[RTIndex].GetComponent<MainCameraBehaviour>();
+    }
 
 	int getNextUnlocked()
 	{

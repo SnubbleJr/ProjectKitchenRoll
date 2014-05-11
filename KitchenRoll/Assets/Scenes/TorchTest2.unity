@@ -282,11 +282,64 @@ Prefab:
       propertyPath: blurArea
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 9548819c281b4304d9c089ab7cd85747, type: 2}
+      propertyPath: rtCamera
+      value: 
+      objectReference: {fileID: 100000, guid: 99269e1881613894588aa1b113dc1f47, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9548819c281b4304d9c089ab7cd85747, type: 2}
   m_RootGameObject: {fileID: 1614813960}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &163468268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+  m_PrefabInternal: {fileID: 1035793898}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 163468270}
+  - 114: {fileID: 163468269}
+  m_Layer: 0
+  m_Name: Torch Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &163468269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1035793898}
+  m_GameObject: {fileID: 163468268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb9559f4a600764db111c49afa5928c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childTorch: {fileID: 100000, guid: e91749294d10ff3478faef68a0475c8c, type: 2}
+  torchesPerSecond: 1
+  delay: .280000001
+  maxSize: 8
+  growRate: .00999999978
+  castFrequency: 32
+  destructionTime: 1
+  cone: 0
+  coneTo: 45
+  coneFrom: 315
+--- !u!4 &163468270
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+  m_PrefabInternal: {fileID: 1035793898}
+  m_GameObject: {fileID: 163468268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 112.05497, y: 86.482666, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &309752186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1181,87 @@ Transform:
   m_Children:
   - {fileID: 1735403678}
   m_Father: {fileID: 2023072894}
+--- !u!1001 &1035793898
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 112.05497
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 86.482666
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: cone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: coneFrom
+      value: 315
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: coneTo
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: destructionTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: torchMaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 95f9511b19b7e354da297e06530fae1a,
+        type: 2}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: torchesPerSecond
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: maxSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: castFrequency
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: delay
+      value: .280000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d2a23fa87236e642994a7b499c4578d, type: 2}
+  m_RootGameObject: {fileID: 163468268}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1039257899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,6 +1486,7 @@ GameObject:
   - 92: {fileID: 1129446972}
   - 114: {fileID: 1129446971}
   - 114: {fileID: 1129446970}
+  - 114: {fileID: 1129446975}
   m_Layer: 0
   m_Name: Display Camera
   m_TagString: DisplayCamera
@@ -1446,6 +1581,17 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 0
+--- !u!114 &1129446975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129446968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2225602fbaa06ba4b8428bb99aaec72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1142215816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,6 +2307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 407624839c3ef44438dba90323c32e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rtCamera: {fileID: 100000, guid: 99269e1881613894588aa1b113dc1f47, type: 2}
 --- !u!114 &1614813965
 MonoBehaviour:
   m_ObjectHideFlags: 0

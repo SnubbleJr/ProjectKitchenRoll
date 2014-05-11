@@ -38,6 +38,7 @@ public class RayCastTorchEmitter : MonoBehaviour {
 			{
 				GameObject torch = Instantiate (childTorch, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
 				RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
+                torch.transform.parent = transform;
 				torchScript.setMaxSize (maxSize);
 				torchScript.setGrowRate (growRate);
 				torchScript.setCastFrequency (castFrequency);
