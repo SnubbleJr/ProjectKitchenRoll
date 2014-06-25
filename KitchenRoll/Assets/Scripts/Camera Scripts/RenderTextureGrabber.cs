@@ -57,13 +57,13 @@ public class RenderTextureGrabber : MonoBehaviour {
 	void cycleRT()
 	{
 		RTIndex = getNextUnlocked();
-		RTSetActive();
+		RTSetActive(RTIndex);
 	}
 
-	void RTSetActive()
+	void RTSetActive(int index)
 	{
-        cameraList[RTIndex].transform.position = transform.position;
-		RenderTexture.active = RTList[RTIndex].renderTexture;
+        cameraList[index].transform.position = transform.position;
+		RenderTexture.active = RTList[index].renderTexture;
 	}
 
 	public RenderTexture getTexture(float torchDestructionTime)
@@ -94,9 +94,12 @@ public class RenderTextureGrabber : MonoBehaviour {
 	}
 
 	void lockRT(int index)
-	{		
-		RTList[index].locked = true;
-		lockCount++;
+	{
+        if (RTList[index].locked != true)
+        {
+            RTList[index].locked = true;
+            lockCount++;
+        }
 	}
 
 	IEnumerator unlockRT(int index, float time)
