@@ -298,7 +298,6 @@ public class RayCastTorch : MonoBehaviour {
 			yield return new WaitForEndOfFrame();
 			GameObject torch = Instantiate (this.gameObject, location, transform.rotation) as GameObject;
 			RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
-            //torch.transform.parent = transform;
 			torchScript.setMaxSize (size);
 			torchScript.setGrowRate (growRate);
 			torchScript.setCastFrequency (childFreq);
@@ -313,18 +312,17 @@ public class RayCastTorch : MonoBehaviour {
 		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
         torchBG.transform.parent = transform;
 
-		torchBGScript.setAlternateVersion(alternateVersion);
+		torchBGScript.setAlternateVersion(!alternateVersion);
+		torchBGScript.setMaxSize(maxSize);
+		torchBGScript.setCastFrequency(castFrequency);
+		torchBGScript.setVecArr(vecArr);
 
 		updateBG();
 	}
 
 	void updateBG()
 	{
-		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
-
-		torchBGScript.setVecArr(vecArr);
-		torchBGScript.setMaxSize(maxSize);
-		torchBGScript.setCastFrequency(castFrequency);
+        //torchBGScript.setCurrentSize(currentSize);
 	}
 
 	public Mesh getMesh()

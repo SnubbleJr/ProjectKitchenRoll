@@ -8,7 +8,7 @@ public class RayCastTorchBackground : MonoBehaviour {
 
 	LineRenderer BG;
 
-	private float maxSize ;
+	private float maxSize, currentSize;
 	private int castFrequency;
 	private Vector3 offset;
 
@@ -59,7 +59,8 @@ public class RayCastTorchBackground : MonoBehaviour {
 	{
 		for (int i=0; i < vecArr.Length-1; i++)
 		{
-			BG.SetPosition(i, (vecArr[i]*scale));
+            BG.SetPosition(i, (vecArr[i] * scale));
+            vecArr[i] *= (1 + currentSize);
 		}
 		
 		BG.SetPosition(vecArr.Length-1, (vecArr[0]*scale));
@@ -69,18 +70,27 @@ public class RayCastTorchBackground : MonoBehaviour {
 	public void setScale()
 	{
 		setScale(1f);
-		
 	}
 
-	public void setMaxSize(float size)
-	{
-		maxSize = size;
-	}
-	
-	public float getMaxSize()
-	{
-		return maxSize;
-	}
+    public void setMaxSize(float size)
+    {
+        maxSize = size;
+    }
+
+    public float getMaxSize()
+    {
+        return maxSize;
+    }
+
+    public void setCurrentSize(float size)
+    {
+        currentSize = size;
+    }
+
+    public float getCurrentSize()
+    {
+        return currentSize;
+    }
 	
 	public void setCastFrequency(int freq)
 	{
