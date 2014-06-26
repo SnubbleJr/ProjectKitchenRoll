@@ -1,0 +1,970 @@
+fileFormatVersion: 2
+guid: 8b4ba91e271114f49883af114efa3546
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: 3dsMaxCamera
+    100002: 3dsMaxCamera.Target
+    100004: Bip001
+    100006: Bip001 Footsteps
+    100008: Bip001 Head
+    100010: Bip001 HeadNub
+    100012: Bip001 L Calf
+    100014: Bip001 L Clavicle
+    100016: Bip001 L Finger0
+    100018: Bip001 L Finger01
+    100020: Bip001 L Finger02
+    100022: Bip001 L Finger0Nub
+    100024: Bip001 L Finger1
+    100026: Bip001 L Finger11
+    100028: Bip001 L Finger12
+    100030: Bip001 L Finger1Nub
+    100032: Bip001 L Finger2
+    100034: Bip001 L Finger21
+    100036: Bip001 L Finger22
+    100038: Bip001 L Finger2Nub
+    100040: Bip001 L Finger3
+    100042: Bip001 L Finger31
+    100044: Bip001 L Finger32
+    100046: Bip001 L Finger3Nub
+    100048: Bip001 L Finger4
+    100050: Bip001 L Finger41
+    100052: Bip001 L Finger42
+    100054: Bip001 L Finger4Nub
+    100056: Bip001 L Foot
+    100058: Bip001 L Forearm
+    100060: Bip001 L Hand
+    100062: Bip001 L Thigh
+    100064: Bip001 L Toe0
+    100066: Bip001 L Toe0Nub
+    100068: Bip001 L UpperArm
+    100070: Bip001 Neck
+    100072: Bip001 Pelvis
+    100074: Bip001 R Calf
+    100076: Bip001 R Clavicle
+    100078: Bip001 R Finger0
+    100080: Bip001 R Finger01
+    100082: Bip001 R Finger02
+    100084: Bip001 R Finger0Nub
+    100086: Bip001 R Finger1
+    100088: Bip001 R Finger11
+    100090: Bip001 R Finger12
+    100092: Bip001 R Finger1Nub
+    100094: Bip001 R Finger2
+    100096: Bip001 R Finger21
+    100098: Bip001 R Finger22
+    100100: Bip001 R Finger2Nub
+    100102: Bip001 R Finger3
+    100104: Bip001 R Finger31
+    100106: Bip001 R Finger32
+    100108: Bip001 R Finger3Nub
+    100110: Bip001 R Finger4
+    100112: Bip001 R Finger41
+    100114: Bip001 R Finger42
+    100116: Bip001 R Finger4Nub
+    100118: Bip001 R Foot
+    100120: Bip001 R Forearm
+    100122: Bip001 R Hand
+    100124: Bip001 R Thigh
+    100126: Bip001 R Toe0
+    100128: Bip001 R Toe0Nub
+    100130: Bip001 R UpperArm
+    100132: Bip001 Spine
+    100134: Bip001 Spine1
+    100136: Bip001 Spine2
+    100138: Bip001 Spine3
+    100140: Character_Ctrl:ChestEndEffector
+    100142: Character_Ctrl:ChestEndEffector001
+    100144: Character_Ctrl:ChestEndEffector002
+    100146: Character_Ctrl:ChestEndEffector003
+    100148: Character_Ctrl:ChestOriginEffector
+    100150: Character_Ctrl:ChestOriginEffector001
+    100152: Character_Ctrl:ChestOriginEffector002
+    100154: Character_Ctrl:ChestOriginEffector003
+    100156: Character_Ctrl:Head
+    100158: Character_Ctrl:Head001
+    100160: Character_Ctrl:Head002
+    100162: Character_Ctrl:Head003
+    100164: Character_Ctrl:HeadEffector
+    100166: Character_Ctrl:HeadEffector001
+    100168: Character_Ctrl:HeadEffector002
+    100170: Character_Ctrl:HeadEffector003
+    100172: Character_Ctrl:Hips
+    100174: Character_Ctrl:Hips001
+    100176: Character_Ctrl:Hips002
+    100178: Character_Ctrl:Hips003
+    100180: Character_Ctrl:HipsEffector
+    100182: Character_Ctrl:HipsEffector001
+    100184: Character_Ctrl:HipsEffector002
+    100186: Character_Ctrl:HipsEffector003
+    100188: Character_Ctrl:LeftAnkleEffector
+    100190: Character_Ctrl:LeftAnkleEffector001
+    100192: Character_Ctrl:LeftAnkleEffector002
+    100194: Character_Ctrl:LeftAnkleEffector003
+    100196: Character_Ctrl:LeftArm
+    100198: Character_Ctrl:LeftArm001
+    100200: Character_Ctrl:LeftArm002
+    100202: Character_Ctrl:LeftArm003
+    100204: Character_Ctrl:LeftElbowEffector
+    100206: Character_Ctrl:LeftElbowEffector001
+    100208: Character_Ctrl:LeftElbowEffector002
+    100210: Character_Ctrl:LeftElbowEffector003
+    100212: Character_Ctrl:LeftFoot
+    100214: Character_Ctrl:LeftFoot001
+    100216: Character_Ctrl:LeftFoot002
+    100218: Character_Ctrl:LeftFoot003
+    100220: Character_Ctrl:LeftFootIndex003
+    100222: Character_Ctrl:LeftFootIndex004
+    100224: Character_Ctrl:LeftFootIndex005
+    100226: Character_Ctrl:LeftFootIndex006
+    100228: Character_Ctrl:LeftFootIndex007
+    100230: Character_Ctrl:LeftFootIndex008
+    100232: Character_Ctrl:LeftFootIndex1
+    100234: Character_Ctrl:LeftFootIndex2
+    100236: Character_Ctrl:LeftFootIndexEffector
+    100238: Character_Ctrl:LeftFootIndexEffector001
+    100240: Character_Ctrl:LeftFootIndexEffector002
+    100242: Character_Ctrl:LeftFootIndexEffector003
+    100244: Character_Ctrl:LeftForeArm
+    100246: Character_Ctrl:LeftForeArm001
+    100248: Character_Ctrl:LeftForeArm002
+    100250: Character_Ctrl:LeftForeArm003
+    100252: Character_Ctrl:LeftHand
+    100254: Character_Ctrl:LeftHand001
+    100256: Character_Ctrl:LeftHand002
+    100258: Character_Ctrl:LeftHand003
+    100260: Character_Ctrl:LeftHandIndex005
+    100262: Character_Ctrl:LeftHandIndex006
+    100264: Character_Ctrl:LeftHandIndex007
+    100266: Character_Ctrl:LeftHandIndex008
+    100268: Character_Ctrl:LeftHandIndex009
+    100270: Character_Ctrl:LeftHandIndex010
+    100272: Character_Ctrl:LeftHandIndex011
+    100274: Character_Ctrl:LeftHandIndex012
+    100276: Character_Ctrl:LeftHandIndex013
+    100278: Character_Ctrl:LeftHandIndex014
+    100280: Character_Ctrl:LeftHandIndex015
+    100282: Character_Ctrl:LeftHandIndex016
+    100284: Character_Ctrl:LeftHandIndex1
+    100286: Character_Ctrl:LeftHandIndex2
+    100288: Character_Ctrl:LeftHandIndex3
+    100290: Character_Ctrl:LeftHandIndex4
+    100292: Character_Ctrl:LeftHandIndexEffector
+    100294: Character_Ctrl:LeftHandIndexEffector001
+    100296: Character_Ctrl:LeftHandIndexEffector002
+    100298: Character_Ctrl:LeftHandIndexEffector003
+    100300: Character_Ctrl:LeftHandMiddle005
+    100302: Character_Ctrl:LeftHandMiddle006
+    100304: Character_Ctrl:LeftHandMiddle007
+    100306: Character_Ctrl:LeftHandMiddle008
+    100308: Character_Ctrl:LeftHandMiddle009
+    100310: Character_Ctrl:LeftHandMiddle010
+    100312: Character_Ctrl:LeftHandMiddle011
+    100314: Character_Ctrl:LeftHandMiddle012
+    100316: Character_Ctrl:LeftHandMiddle013
+    100318: Character_Ctrl:LeftHandMiddle014
+    100320: Character_Ctrl:LeftHandMiddle015
+    100322: Character_Ctrl:LeftHandMiddle016
+    100324: Character_Ctrl:LeftHandMiddle1
+    100326: Character_Ctrl:LeftHandMiddle2
+    100328: Character_Ctrl:LeftHandMiddle3
+    100330: Character_Ctrl:LeftHandMiddle4
+    100332: Character_Ctrl:LeftHandMiddleEffector
+    100334: Character_Ctrl:LeftHandMiddleEffector001
+    100336: Character_Ctrl:LeftHandMiddleEffector002
+    100338: Character_Ctrl:LeftHandMiddleEffector003
+    100340: Character_Ctrl:LeftHandPinky005
+    100342: Character_Ctrl:LeftHandPinky006
+    100344: Character_Ctrl:LeftHandPinky007
+    100346: Character_Ctrl:LeftHandPinky008
+    100348: Character_Ctrl:LeftHandPinky009
+    100350: Character_Ctrl:LeftHandPinky010
+    100352: Character_Ctrl:LeftHandPinky011
+    100354: Character_Ctrl:LeftHandPinky012
+    100356: Character_Ctrl:LeftHandPinky013
+    100358: Character_Ctrl:LeftHandPinky014
+    100360: Character_Ctrl:LeftHandPinky015
+    100362: Character_Ctrl:LeftHandPinky016
+    100364: Character_Ctrl:LeftHandPinky1
+    100366: Character_Ctrl:LeftHandPinky2
+    100368: Character_Ctrl:LeftHandPinky3
+    100370: Character_Ctrl:LeftHandPinky4
+    100372: Character_Ctrl:LeftHandPinkyEffector
+    100374: Character_Ctrl:LeftHandPinkyEffector001
+    100376: Character_Ctrl:LeftHandPinkyEffector002
+    100378: Character_Ctrl:LeftHandPinkyEffector003
+    100380: Character_Ctrl:LeftHandRing005
+    100382: Character_Ctrl:LeftHandRing006
+    100384: Character_Ctrl:LeftHandRing007
+    100386: Character_Ctrl:LeftHandRing008
+    100388: Character_Ctrl:LeftHandRing009
+    100390: Character_Ctrl:LeftHandRing010
+    100392: Character_Ctrl:LeftHandRing011
+    100394: Character_Ctrl:LeftHandRing012
+    100396: Character_Ctrl:LeftHandRing013
+    100398: Character_Ctrl:LeftHandRing014
+    100400: Character_Ctrl:LeftHandRing015
+    100402: Character_Ctrl:LeftHandRing016
+    100404: Character_Ctrl:LeftHandRing1
+    100406: Character_Ctrl:LeftHandRing2
+    100408: Character_Ctrl:LeftHandRing3
+    100410: Character_Ctrl:LeftHandRing4
+    100412: Character_Ctrl:LeftHandRingEffector
+    100414: Character_Ctrl:LeftHandRingEffector001
+    100416: Character_Ctrl:LeftHandRingEffector002
+    100418: Character_Ctrl:LeftHandRingEffector003
+    100420: Character_Ctrl:LeftHandThumb005
+    100422: Character_Ctrl:LeftHandThumb006
+    100424: Character_Ctrl:LeftHandThumb007
+    100426: Character_Ctrl:LeftHandThumb008
+    100428: Character_Ctrl:LeftHandThumb009
+    100430: Character_Ctrl:LeftHandThumb010
+    100432: Character_Ctrl:LeftHandThumb011
+    100434: Character_Ctrl:LeftHandThumb012
+    100436: Character_Ctrl:LeftHandThumb013
+    100438: Character_Ctrl:LeftHandThumb014
+    100440: Character_Ctrl:LeftHandThumb015
+    100442: Character_Ctrl:LeftHandThumb016
+    100444: Character_Ctrl:LeftHandThumb1
+    100446: Character_Ctrl:LeftHandThumb2
+    100448: Character_Ctrl:LeftHandThumb3
+    100450: Character_Ctrl:LeftHandThumb4
+    100452: Character_Ctrl:LeftHandThumbEffector
+    100454: Character_Ctrl:LeftHandThumbEffector001
+    100456: Character_Ctrl:LeftHandThumbEffector002
+    100458: Character_Ctrl:LeftHandThumbEffector003
+    100460: Character_Ctrl:LeftHipEffector
+    100462: Character_Ctrl:LeftHipEffector001
+    100464: Character_Ctrl:LeftHipEffector002
+    100466: Character_Ctrl:LeftHipEffector003
+    100468: Character_Ctrl:LeftKneeEffector
+    100470: Character_Ctrl:LeftKneeEffector001
+    100472: Character_Ctrl:LeftKneeEffector002
+    100474: Character_Ctrl:LeftKneeEffector003
+    100476: Character_Ctrl:LeftLeg
+    100478: Character_Ctrl:LeftLeg001
+    100480: Character_Ctrl:LeftLeg002
+    100482: Character_Ctrl:LeftLeg003
+    100484: Character_Ctrl:LeftShoulder
+    100486: Character_Ctrl:LeftShoulder001
+    100488: Character_Ctrl:LeftShoulder002
+    100490: Character_Ctrl:LeftShoulder003
+    100492: Character_Ctrl:LeftShoulderEffector
+    100494: Character_Ctrl:LeftShoulderEffector001
+    100496: Character_Ctrl:LeftShoulderEffector002
+    100498: Character_Ctrl:LeftShoulderEffector003
+    100500: Character_Ctrl:LeftUpLeg
+    100502: Character_Ctrl:LeftUpLeg001
+    100504: Character_Ctrl:LeftUpLeg002
+    100506: Character_Ctrl:LeftUpLeg003
+    100508: Character_Ctrl:LeftWristEffector
+    100510: Character_Ctrl:LeftWristEffector001
+    100512: Character_Ctrl:LeftWristEffector002
+    100514: Character_Ctrl:LeftWristEffector003
+    100516: Character_Ctrl:Neck
+    100518: Character_Ctrl:Neck001
+    100520: Character_Ctrl:Neck002
+    100522: Character_Ctrl:Neck003
+    100524: Character_Ctrl:Reference
+    100526: Character_Ctrl:Reference001
+    100528: Character_Ctrl:Reference002
+    100530: Character_Ctrl:Reference003
+    100532: Character_Ctrl:RightAnkleEffector
+    100534: Character_Ctrl:RightAnkleEffector001
+    100536: Character_Ctrl:RightAnkleEffector002
+    100538: Character_Ctrl:RightAnkleEffector003
+    100540: Character_Ctrl:RightArm
+    100542: Character_Ctrl:RightArm001
+    100544: Character_Ctrl:RightArm002
+    100546: Character_Ctrl:RightArm003
+    100548: Character_Ctrl:RightElbowEffector
+    100550: Character_Ctrl:RightElbowEffector001
+    100552: Character_Ctrl:RightElbowEffector002
+    100554: Character_Ctrl:RightElbowEffector003
+    100556: Character_Ctrl:RightFoot
+    100558: Character_Ctrl:RightFoot001
+    100560: Character_Ctrl:RightFoot002
+    100562: Character_Ctrl:RightFoot003
+    100564: Character_Ctrl:RightFootIndex003
+    100566: Character_Ctrl:RightFootIndex004
+    100568: Character_Ctrl:RightFootIndex005
+    100570: Character_Ctrl:RightFootIndex006
+    100572: Character_Ctrl:RightFootIndex007
+    100574: Character_Ctrl:RightFootIndex008
+    100576: Character_Ctrl:RightFootIndex1
+    100578: Character_Ctrl:RightFootIndex2
+    100580: Character_Ctrl:RightFootIndexEffector
+    100582: Character_Ctrl:RightFootIndexEffector001
+    100584: Character_Ctrl:RightFootIndexEffector002
+    100586: Character_Ctrl:RightFootIndexEffector003
+    100588: Character_Ctrl:RightForeArm
+    100590: Character_Ctrl:RightForeArm001
+    100592: Character_Ctrl:RightForeArm002
+    100594: Character_Ctrl:RightForeArm003
+    100596: Character_Ctrl:RightHand
+    100598: Character_Ctrl:RightHand001
+    100600: Character_Ctrl:RightHand002
+    100602: Character_Ctrl:RightHand003
+    100604: Character_Ctrl:RightHandIndex005
+    100606: Character_Ctrl:RightHandIndex006
+    100608: Character_Ctrl:RightHandIndex007
+    100610: Character_Ctrl:RightHandIndex008
+    100612: Character_Ctrl:RightHandIndex009
+    100614: Character_Ctrl:RightHandIndex010
+    100616: Character_Ctrl:RightHandIndex011
+    100618: Character_Ctrl:RightHandIndex012
+    100620: Character_Ctrl:RightHandIndex013
+    100622: Character_Ctrl:RightHandIndex014
+    100624: Character_Ctrl:RightHandIndex015
+    100626: Character_Ctrl:RightHandIndex016
+    100628: Character_Ctrl:RightHandIndex1
+    100630: Character_Ctrl:RightHandIndex2
+    100632: Character_Ctrl:RightHandIndex3
+    100634: Character_Ctrl:RightHandIndex4
+    100636: Character_Ctrl:RightHandIndexEffector
+    100638: Character_Ctrl:RightHandIndexEffector001
+    100640: Character_Ctrl:RightHandIndexEffector002
+    100642: Character_Ctrl:RightHandIndexEffector003
+    100644: Character_Ctrl:RightHandMiddle005
+    100646: Character_Ctrl:RightHandMiddle006
+    100648: Character_Ctrl:RightHandMiddle007
+    100650: Character_Ctrl:RightHandMiddle008
+    100652: Character_Ctrl:RightHandMiddle009
+    100654: Character_Ctrl:RightHandMiddle010
+    100656: Character_Ctrl:RightHandMiddle011
+    100658: Character_Ctrl:RightHandMiddle012
+    100660: Character_Ctrl:RightHandMiddle013
+    100662: Character_Ctrl:RightHandMiddle014
+    100664: Character_Ctrl:RightHandMiddle015
+    100666: Character_Ctrl:RightHandMiddle016
+    100668: Character_Ctrl:RightHandMiddle1
+    100670: Character_Ctrl:RightHandMiddle2
+    100672: Character_Ctrl:RightHandMiddle3
+    100674: Character_Ctrl:RightHandMiddle4
+    100676: Character_Ctrl:RightHandMiddleEffector
+    100678: Character_Ctrl:RightHandMiddleEffector001
+    100680: Character_Ctrl:RightHandMiddleEffector002
+    100682: Character_Ctrl:RightHandMiddleEffector003
+    100684: Character_Ctrl:RightHandPinky005
+    100686: Character_Ctrl:RightHandPinky006
+    100688: Character_Ctrl:RightHandPinky007
+    100690: Character_Ctrl:RightHandPinky008
+    100692: Character_Ctrl:RightHandPinky009
+    100694: Character_Ctrl:RightHandPinky010
+    100696: Character_Ctrl:RightHandPinky011
+    100698: Character_Ctrl:RightHandPinky012
+    100700: Character_Ctrl:RightHandPinky013
+    100702: Character_Ctrl:RightHandPinky014
+    100704: Character_Ctrl:RightHandPinky015
+    100706: Character_Ctrl:RightHandPinky016
+    100708: Character_Ctrl:RightHandPinky1
+    100710: Character_Ctrl:RightHandPinky2
+    100712: Character_Ctrl:RightHandPinky3
+    100714: Character_Ctrl:RightHandPinky4
+    100716: Character_Ctrl:RightHandPinkyEffector
+    100718: Character_Ctrl:RightHandPinkyEffector001
+    100720: Character_Ctrl:RightHandPinkyEffector002
+    100722: Character_Ctrl:RightHandPinkyEffector003
+    100724: Character_Ctrl:RightHandRing005
+    100726: Character_Ctrl:RightHandRing006
+    100728: Character_Ctrl:RightHandRing007
+    100730: Character_Ctrl:RightHandRing008
+    100732: Character_Ctrl:RightHandRing009
+    100734: Character_Ctrl:RightHandRing010
+    100736: Character_Ctrl:RightHandRing011
+    100738: Character_Ctrl:RightHandRing012
+    100740: Character_Ctrl:RightHandRing013
+    100742: Character_Ctrl:RightHandRing014
+    100744: Character_Ctrl:RightHandRing015
+    100746: Character_Ctrl:RightHandRing016
+    100748: Character_Ctrl:RightHandRing1
+    100750: Character_Ctrl:RightHandRing2
+    100752: Character_Ctrl:RightHandRing3
+    100754: Character_Ctrl:RightHandRing4
+    100756: Character_Ctrl:RightHandRingEffector
+    100758: Character_Ctrl:RightHandRingEffector001
+    100760: Character_Ctrl:RightHandRingEffector002
+    100762: Character_Ctrl:RightHandRingEffector003
+    100764: Character_Ctrl:RightHandThumb005
+    100766: Character_Ctrl:RightHandThumb006
+    100768: Character_Ctrl:RightHandThumb007
+    100770: Character_Ctrl:RightHandThumb008
+    100772: Character_Ctrl:RightHandThumb009
+    100774: Character_Ctrl:RightHandThumb010
+    100776: Character_Ctrl:RightHandThumb011
+    100778: Character_Ctrl:RightHandThumb012
+    100780: Character_Ctrl:RightHandThumb013
+    100782: Character_Ctrl:RightHandThumb014
+    100784: Character_Ctrl:RightHandThumb015
+    100786: Character_Ctrl:RightHandThumb016
+    100788: Character_Ctrl:RightHandThumb1
+    100790: Character_Ctrl:RightHandThumb2
+    100792: Character_Ctrl:RightHandThumb3
+    100794: Character_Ctrl:RightHandThumb4
+    100796: Character_Ctrl:RightHandThumbEffector
+    100798: Character_Ctrl:RightHandThumbEffector001
+    100800: Character_Ctrl:RightHandThumbEffector002
+    100802: Character_Ctrl:RightHandThumbEffector003
+    100804: Character_Ctrl:RightHipEffector
+    100806: Character_Ctrl:RightHipEffector001
+    100808: Character_Ctrl:RightHipEffector002
+    100810: Character_Ctrl:RightHipEffector003
+    100812: Character_Ctrl:RightKneeEffector
+    100814: Character_Ctrl:RightKneeEffector001
+    100816: Character_Ctrl:RightKneeEffector002
+    100818: Character_Ctrl:RightKneeEffector003
+    100820: Character_Ctrl:RightLeg
+    100822: Character_Ctrl:RightLeg001
+    100824: Character_Ctrl:RightLeg002
+    100826: Character_Ctrl:RightLeg003
+    100828: Character_Ctrl:RightShoulder
+    100830: Character_Ctrl:RightShoulder001
+    100832: Character_Ctrl:RightShoulder002
+    100834: Character_Ctrl:RightShoulder003
+    100836: Character_Ctrl:RightShoulderEffector
+    100838: Character_Ctrl:RightShoulderEffector001
+    100840: Character_Ctrl:RightShoulderEffector002
+    100842: Character_Ctrl:RightShoulderEffector003
+    100844: Character_Ctrl:RightUpLeg
+    100846: Character_Ctrl:RightUpLeg001
+    100848: Character_Ctrl:RightUpLeg002
+    100850: Character_Ctrl:RightUpLeg003
+    100852: Character_Ctrl:RightWristEffector
+    100854: Character_Ctrl:RightWristEffector001
+    100856: Character_Ctrl:RightWristEffector002
+    100858: Character_Ctrl:RightWristEffector003
+    100860: Character_Ctrl:Spine
+    100862: Character_Ctrl:Spine004
+    100864: Character_Ctrl:Spine005
+    100866: Character_Ctrl:Spine006
+    100868: Character_Ctrl:Spine007
+    100870: Character_Ctrl:Spine008
+    100872: Character_Ctrl:Spine009
+    100874: Character_Ctrl:Spine010
+    100876: Character_Ctrl:Spine011
+    100878: Character_Ctrl:Spine012
+    100880: Character_Ctrl:Spine013
+    100882: Character_Ctrl:Spine014
+    100884: Character_Ctrl:Spine015
+    100886: Character_Ctrl:Spine1
+    100888: Character_Ctrl:Spine2
+    100890: Character_Ctrl:Spine3
+    100892: ladder
+    100894: //RootNode
+    100896: ladderEnd
+    100898: WomanAndHeadWithNoFeet
+    400000: 3dsMaxCamera
+    400002: 3dsMaxCamera.Target
+    400004: Bip001
+    400006: Bip001 Footsteps
+    400008: Bip001 Head
+    400010: Bip001 HeadNub
+    400012: Bip001 L Calf
+    400014: Bip001 L Clavicle
+    400016: Bip001 L Finger0
+    400018: Bip001 L Finger01
+    400020: Bip001 L Finger02
+    400022: Bip001 L Finger0Nub
+    400024: Bip001 L Finger1
+    400026: Bip001 L Finger11
+    400028: Bip001 L Finger12
+    400030: Bip001 L Finger1Nub
+    400032: Bip001 L Finger2
+    400034: Bip001 L Finger21
+    400036: Bip001 L Finger22
+    400038: Bip001 L Finger2Nub
+    400040: Bip001 L Finger3
+    400042: Bip001 L Finger31
+    400044: Bip001 L Finger32
+    400046: Bip001 L Finger3Nub
+    400048: Bip001 L Finger4
+    400050: Bip001 L Finger41
+    400052: Bip001 L Finger42
+    400054: Bip001 L Finger4Nub
+    400056: Bip001 L Foot
+    400058: Bip001 L Forearm
+    400060: Bip001 L Hand
+    400062: Bip001 L Thigh
+    400064: Bip001 L Toe0
+    400066: Bip001 L Toe0Nub
+    400068: Bip001 L UpperArm
+    400070: Bip001 Neck
+    400072: Bip001 Pelvis
+    400074: Bip001 R Calf
+    400076: Bip001 R Clavicle
+    400078: Bip001 R Finger0
+    400080: Bip001 R Finger01
+    400082: Bip001 R Finger02
+    400084: Bip001 R Finger0Nub
+    400086: Bip001 R Finger1
+    400088: Bip001 R Finger11
+    400090: Bip001 R Finger12
+    400092: Bip001 R Finger1Nub
+    400094: Bip001 R Finger2
+    400096: Bip001 R Finger21
+    400098: Bip001 R Finger22
+    400100: Bip001 R Finger2Nub
+    400102: Bip001 R Finger3
+    400104: Bip001 R Finger31
+    400106: Bip001 R Finger32
+    400108: Bip001 R Finger3Nub
+    400110: Bip001 R Finger4
+    400112: Bip001 R Finger41
+    400114: Bip001 R Finger42
+    400116: Bip001 R Finger4Nub
+    400118: Bip001 R Foot
+    400120: Bip001 R Forearm
+    400122: Bip001 R Hand
+    400124: Bip001 R Thigh
+    400126: Bip001 R Toe0
+    400128: Bip001 R Toe0Nub
+    400130: Bip001 R UpperArm
+    400132: Bip001 Spine
+    400134: Bip001 Spine1
+    400136: Bip001 Spine2
+    400138: Bip001 Spine3
+    400140: Character_Ctrl:ChestEndEffector
+    400142: Character_Ctrl:ChestEndEffector001
+    400144: Character_Ctrl:ChestEndEffector002
+    400146: Character_Ctrl:ChestEndEffector003
+    400148: Character_Ctrl:ChestOriginEffector
+    400150: Character_Ctrl:ChestOriginEffector001
+    400152: Character_Ctrl:ChestOriginEffector002
+    400154: Character_Ctrl:ChestOriginEffector003
+    400156: Character_Ctrl:Head
+    400158: Character_Ctrl:Head001
+    400160: Character_Ctrl:Head002
+    400162: Character_Ctrl:Head003
+    400164: Character_Ctrl:HeadEffector
+    400166: Character_Ctrl:HeadEffector001
+    400168: Character_Ctrl:HeadEffector002
+    400170: Character_Ctrl:HeadEffector003
+    400172: Character_Ctrl:Hips
+    400174: Character_Ctrl:Hips001
+    400176: Character_Ctrl:Hips002
+    400178: Character_Ctrl:Hips003
+    400180: Character_Ctrl:HipsEffector
+    400182: Character_Ctrl:HipsEffector001
+    400184: Character_Ctrl:HipsEffector002
+    400186: Character_Ctrl:HipsEffector003
+    400188: Character_Ctrl:LeftAnkleEffector
+    400190: Character_Ctrl:LeftAnkleEffector001
+    400192: Character_Ctrl:LeftAnkleEffector002
+    400194: Character_Ctrl:LeftAnkleEffector003
+    400196: Character_Ctrl:LeftArm
+    400198: Character_Ctrl:LeftArm001
+    400200: Character_Ctrl:LeftArm002
+    400202: Character_Ctrl:LeftArm003
+    400204: Character_Ctrl:LeftElbowEffector
+    400206: Character_Ctrl:LeftElbowEffector001
+    400208: Character_Ctrl:LeftElbowEffector002
+    400210: Character_Ctrl:LeftElbowEffector003
+    400212: Character_Ctrl:LeftFoot
+    400214: Character_Ctrl:LeftFoot001
+    400216: Character_Ctrl:LeftFoot002
+    400218: Character_Ctrl:LeftFoot003
+    400220: Character_Ctrl:LeftFootIndex003
+    400222: Character_Ctrl:LeftFootIndex004
+    400224: Character_Ctrl:LeftFootIndex005
+    400226: Character_Ctrl:LeftFootIndex006
+    400228: Character_Ctrl:LeftFootIndex007
+    400230: Character_Ctrl:LeftFootIndex008
+    400232: Character_Ctrl:LeftFootIndex1
+    400234: Character_Ctrl:LeftFootIndex2
+    400236: Character_Ctrl:LeftFootIndexEffector
+    400238: Character_Ctrl:LeftFootIndexEffector001
+    400240: Character_Ctrl:LeftFootIndexEffector002
+    400242: Character_Ctrl:LeftFootIndexEffector003
+    400244: Character_Ctrl:LeftForeArm
+    400246: Character_Ctrl:LeftForeArm001
+    400248: Character_Ctrl:LeftForeArm002
+    400250: Character_Ctrl:LeftForeArm003
+    400252: Character_Ctrl:LeftHand
+    400254: Character_Ctrl:LeftHand001
+    400256: Character_Ctrl:LeftHand002
+    400258: Character_Ctrl:LeftHand003
+    400260: Character_Ctrl:LeftHandIndex005
+    400262: Character_Ctrl:LeftHandIndex006
+    400264: Character_Ctrl:LeftHandIndex007
+    400266: Character_Ctrl:LeftHandIndex008
+    400268: Character_Ctrl:LeftHandIndex009
+    400270: Character_Ctrl:LeftHandIndex010
+    400272: Character_Ctrl:LeftHandIndex011
+    400274: Character_Ctrl:LeftHandIndex012
+    400276: Character_Ctrl:LeftHandIndex013
+    400278: Character_Ctrl:LeftHandIndex014
+    400280: Character_Ctrl:LeftHandIndex015
+    400282: Character_Ctrl:LeftHandIndex016
+    400284: Character_Ctrl:LeftHandIndex1
+    400286: Character_Ctrl:LeftHandIndex2
+    400288: Character_Ctrl:LeftHandIndex3
+    400290: Character_Ctrl:LeftHandIndex4
+    400292: Character_Ctrl:LeftHandIndexEffector
+    400294: Character_Ctrl:LeftHandIndexEffector001
+    400296: Character_Ctrl:LeftHandIndexEffector002
+    400298: Character_Ctrl:LeftHandIndexEffector003
+    400300: Character_Ctrl:LeftHandMiddle005
+    400302: Character_Ctrl:LeftHandMiddle006
+    400304: Character_Ctrl:LeftHandMiddle007
+    400306: Character_Ctrl:LeftHandMiddle008
+    400308: Character_Ctrl:LeftHandMiddle009
+    400310: Character_Ctrl:LeftHandMiddle010
+    400312: Character_Ctrl:LeftHandMiddle011
+    400314: Character_Ctrl:LeftHandMiddle012
+    400316: Character_Ctrl:LeftHandMiddle013
+    400318: Character_Ctrl:LeftHandMiddle014
+    400320: Character_Ctrl:LeftHandMiddle015
+    400322: Character_Ctrl:LeftHandMiddle016
+    400324: Character_Ctrl:LeftHandMiddle1
+    400326: Character_Ctrl:LeftHandMiddle2
+    400328: Character_Ctrl:LeftHandMiddle3
+    400330: Character_Ctrl:LeftHandMiddle4
+    400332: Character_Ctrl:LeftHandMiddleEffector
+    400334: Character_Ctrl:LeftHandMiddleEffector001
+    400336: Character_Ctrl:LeftHandMiddleEffector002
+    400338: Character_Ctrl:LeftHandMiddleEffector003
+    400340: Character_Ctrl:LeftHandPinky005
+    400342: Character_Ctrl:LeftHandPinky006
+    400344: Character_Ctrl:LeftHandPinky007
+    400346: Character_Ctrl:LeftHandPinky008
+    400348: Character_Ctrl:LeftHandPinky009
+    400350: Character_Ctrl:LeftHandPinky010
+    400352: Character_Ctrl:LeftHandPinky011
+    400354: Character_Ctrl:LeftHandPinky012
+    400356: Character_Ctrl:LeftHandPinky013
+    400358: Character_Ctrl:LeftHandPinky014
+    400360: Character_Ctrl:LeftHandPinky015
+    400362: Character_Ctrl:LeftHandPinky016
+    400364: Character_Ctrl:LeftHandPinky1
+    400366: Character_Ctrl:LeftHandPinky2
+    400368: Character_Ctrl:LeftHandPinky3
+    400370: Character_Ctrl:LeftHandPinky4
+    400372: Character_Ctrl:LeftHandPinkyEffector
+    400374: Character_Ctrl:LeftHandPinkyEffector001
+    400376: Character_Ctrl:LeftHandPinkyEffector002
+    400378: Character_Ctrl:LeftHandPinkyEffector003
+    400380: Character_Ctrl:LeftHandRing005
+    400382: Character_Ctrl:LeftHandRing006
+    400384: Character_Ctrl:LeftHandRing007
+    400386: Character_Ctrl:LeftHandRing008
+    400388: Character_Ctrl:LeftHandRing009
+    400390: Character_Ctrl:LeftHandRing010
+    400392: Character_Ctrl:LeftHandRing011
+    400394: Character_Ctrl:LeftHandRing012
+    400396: Character_Ctrl:LeftHandRing013
+    400398: Character_Ctrl:LeftHandRing014
+    400400: Character_Ctrl:LeftHandRing015
+    400402: Character_Ctrl:LeftHandRing016
+    400404: Character_Ctrl:LeftHandRing1
+    400406: Character_Ctrl:LeftHandRing2
+    400408: Character_Ctrl:LeftHandRing3
+    400410: Character_Ctrl:LeftHandRing4
+    400412: Character_Ctrl:LeftHandRingEffector
+    400414: Character_Ctrl:LeftHandRingEffector001
+    400416: Character_Ctrl:LeftHandRingEffector002
+    400418: Character_Ctrl:LeftHandRingEffector003
+    400420: Character_Ctrl:LeftHandThumb005
+    400422: Character_Ctrl:LeftHandThumb006
+    400424: Character_Ctrl:LeftHandThumb007
+    400426: Character_Ctrl:LeftHandThumb008
+    400428: Character_Ctrl:LeftHandThumb009
+    400430: Character_Ctrl:LeftHandThumb010
+    400432: Character_Ctrl:LeftHandThumb011
+    400434: Character_Ctrl:LeftHandThumb012
+    400436: Character_Ctrl:LeftHandThumb013
+    400438: Character_Ctrl:LeftHandThumb014
+    400440: Character_Ctrl:LeftHandThumb015
+    400442: Character_Ctrl:LeftHandThumb016
+    400444: Character_Ctrl:LeftHandThumb1
+    400446: Character_Ctrl:LeftHandThumb2
+    400448: Character_Ctrl:LeftHandThumb3
+    400450: Character_Ctrl:LeftHandThumb4
+    400452: Character_Ctrl:LeftHandThumbEffector
+    400454: Character_Ctrl:LeftHandThumbEffector001
+    400456: Character_Ctrl:LeftHandThumbEffector002
+    400458: Character_Ctrl:LeftHandThumbEffector003
+    400460: Character_Ctrl:LeftHipEffector
+    400462: Character_Ctrl:LeftHipEffector001
+    400464: Character_Ctrl:LeftHipEffector002
+    400466: Character_Ctrl:LeftHipEffector003
+    400468: Character_Ctrl:LeftKneeEffector
+    400470: Character_Ctrl:LeftKneeEffector001
+    400472: Character_Ctrl:LeftKneeEffector002
+    400474: Character_Ctrl:LeftKneeEffector003
+    400476: Character_Ctrl:LeftLeg
+    400478: Character_Ctrl:LeftLeg001
+    400480: Character_Ctrl:LeftLeg002
+    400482: Character_Ctrl:LeftLeg003
+    400484: Character_Ctrl:LeftShoulder
+    400486: Character_Ctrl:LeftShoulder001
+    400488: Character_Ctrl:LeftShoulder002
+    400490: Character_Ctrl:LeftShoulder003
+    400492: Character_Ctrl:LeftShoulderEffector
+    400494: Character_Ctrl:LeftShoulderEffector001
+    400496: Character_Ctrl:LeftShoulderEffector002
+    400498: Character_Ctrl:LeftShoulderEffector003
+    400500: Character_Ctrl:LeftUpLeg
+    400502: Character_Ctrl:LeftUpLeg001
+    400504: Character_Ctrl:LeftUpLeg002
+    400506: Character_Ctrl:LeftUpLeg003
+    400508: Character_Ctrl:LeftWristEffector
+    400510: Character_Ctrl:LeftWristEffector001
+    400512: Character_Ctrl:LeftWristEffector002
+    400514: Character_Ctrl:LeftWristEffector003
+    400516: Character_Ctrl:Neck
+    400518: Character_Ctrl:Neck001
+    400520: Character_Ctrl:Neck002
+    400522: Character_Ctrl:Neck003
+    400524: Character_Ctrl:Reference
+    400526: Character_Ctrl:Reference001
+    400528: Character_Ctrl:Reference002
+    400530: Character_Ctrl:Reference003
+    400532: Character_Ctrl:RightAnkleEffector
+    400534: Character_Ctrl:RightAnkleEffector001
+    400536: Character_Ctrl:RightAnkleEffector002
+    400538: Character_Ctrl:RightAnkleEffector003
+    400540: Character_Ctrl:RightArm
+    400542: Character_Ctrl:RightArm001
+    400544: Character_Ctrl:RightArm002
+    400546: Character_Ctrl:RightArm003
+    400548: Character_Ctrl:RightElbowEffector
+    400550: Character_Ctrl:RightElbowEffector001
+    400552: Character_Ctrl:RightElbowEffector002
+    400554: Character_Ctrl:RightElbowEffector003
+    400556: Character_Ctrl:RightFoot
+    400558: Character_Ctrl:RightFoot001
+    400560: Character_Ctrl:RightFoot002
+    400562: Character_Ctrl:RightFoot003
+    400564: Character_Ctrl:RightFootIndex003
+    400566: Character_Ctrl:RightFootIndex004
+    400568: Character_Ctrl:RightFootIndex005
+    400570: Character_Ctrl:RightFootIndex006
+    400572: Character_Ctrl:RightFootIndex007
+    400574: Character_Ctrl:RightFootIndex008
+    400576: Character_Ctrl:RightFootIndex1
+    400578: Character_Ctrl:RightFootIndex2
+    400580: Character_Ctrl:RightFootIndexEffector
+    400582: Character_Ctrl:RightFootIndexEffector001
+    400584: Character_Ctrl:RightFootIndexEffector002
+    400586: Character_Ctrl:RightFootIndexEffector003
+    400588: Character_Ctrl:RightForeArm
+    400590: Character_Ctrl:RightForeArm001
+    400592: Character_Ctrl:RightForeArm002
+    400594: Character_Ctrl:RightForeArm003
+    400596: Character_Ctrl:RightHand
+    400598: Character_Ctrl:RightHand001
+    400600: Character_Ctrl:RightHand002
+    400602: Character_Ctrl:RightHand003
+    400604: Character_Ctrl:RightHandIndex005
+    400606: Character_Ctrl:RightHandIndex006
+    400608: Character_Ctrl:RightHandIndex007
+    400610: Character_Ctrl:RightHandIndex008
+    400612: Character_Ctrl:RightHandIndex009
+    400614: Character_Ctrl:RightHandIndex010
+    400616: Character_Ctrl:RightHandIndex011
+    400618: Character_Ctrl:RightHandIndex012
+    400620: Character_Ctrl:RightHandIndex013
+    400622: Character_Ctrl:RightHandIndex014
+    400624: Character_Ctrl:RightHandIndex015
+    400626: Character_Ctrl:RightHandIndex016
+    400628: Character_Ctrl:RightHandIndex1
+    400630: Character_Ctrl:RightHandIndex2
+    400632: Character_Ctrl:RightHandIndex3
+    400634: Character_Ctrl:RightHandIndex4
+    400636: Character_Ctrl:RightHandIndexEffector
+    400638: Character_Ctrl:RightHandIndexEffector001
+    400640: Character_Ctrl:RightHandIndexEffector002
+    400642: Character_Ctrl:RightHandIndexEffector003
+    400644: Character_Ctrl:RightHandMiddle005
+    400646: Character_Ctrl:RightHandMiddle006
+    400648: Character_Ctrl:RightHandMiddle007
+    400650: Character_Ctrl:RightHandMiddle008
+    400652: Character_Ctrl:RightHandMiddle009
+    400654: Character_Ctrl:RightHandMiddle010
+    400656: Character_Ctrl:RightHandMiddle011
+    400658: Character_Ctrl:RightHandMiddle012
+    400660: Character_Ctrl:RightHandMiddle013
+    400662: Character_Ctrl:RightHandMiddle014
+    400664: Character_Ctrl:RightHandMiddle015
+    400666: Character_Ctrl:RightHandMiddle016
+    400668: Character_Ctrl:RightHandMiddle1
+    400670: Character_Ctrl:RightHandMiddle2
+    400672: Character_Ctrl:RightHandMiddle3
+    400674: Character_Ctrl:RightHandMiddle4
+    400676: Character_Ctrl:RightHandMiddleEffector
+    400678: Character_Ctrl:RightHandMiddleEffector001
+    400680: Character_Ctrl:RightHandMiddleEffector002
+    400682: Character_Ctrl:RightHandMiddleEffector003
+    400684: Character_Ctrl:RightHandPinky005
+    400686: Character_Ctrl:RightHandPinky006
+    400688: Character_Ctrl:RightHandPinky007
+    400690: Character_Ctrl:RightHandPinky008
+    400692: Character_Ctrl:RightHandPinky009
+    400694: Character_Ctrl:RightHandPinky010
+    400696: Character_Ctrl:RightHandPinky011
+    400698: Character_Ctrl:RightHandPinky012
+    400700: Character_Ctrl:RightHandPinky013
+    400702: Character_Ctrl:RightHandPinky014
+    400704: Character_Ctrl:RightHandPinky015
+    400706: Character_Ctrl:RightHandPinky016
+    400708: Character_Ctrl:RightHandPinky1
+    400710: Character_Ctrl:RightHandPinky2
+    400712: Character_Ctrl:RightHandPinky3
+    400714: Character_Ctrl:RightHandPinky4
+    400716: Character_Ctrl:RightHandPinkyEffector
+    400718: Character_Ctrl:RightHandPinkyEffector001
+    400720: Character_Ctrl:RightHandPinkyEffector002
+    400722: Character_Ctrl:RightHandPinkyEffector003
+    400724: Character_Ctrl:RightHandRing005
+    400726: Character_Ctrl:RightHandRing006
+    400728: Character_Ctrl:RightHandRing007
+    400730: Character_Ctrl:RightHandRing008
+    400732: Character_Ctrl:RightHandRing009
+    400734: Character_Ctrl:RightHandRing010
+    400736: Character_Ctrl:RightHandRing011
+    400738: Character_Ctrl:RightHandRing012
+    400740: Character_Ctrl:RightHandRing013
+    400742: Character_Ctrl:RightHandRing014
+    400744: Character_Ctrl:RightHandRing015
+    400746: Character_Ctrl:RightHandRing016
+    400748: Character_Ctrl:RightHandRing1
+    400750: Character_Ctrl:RightHandRing2
+    400752: Character_Ctrl:RightHandRing3
+    400754: Character_Ctrl:RightHandRing4
+    400756: Character_Ctrl:RightHandRingEffector
+    400758: Character_Ctrl:RightHandRingEffector001
+    400760: Character_Ctrl:RightHandRingEffector002
+    400762: Character_Ctrl:RightHandRingEffector003
+    400764: Character_Ctrl:RightHandThumb005
+    400766: Character_Ctrl:RightHandThumb006
+    400768: Character_Ctrl:RightHandThumb007
+    400770: Character_Ctrl:RightHandThumb008
+    400772: Character_Ctrl:RightHandThumb009
+    400774: Character_Ctrl:RightHandThumb010
+    400776: Character_Ctrl:RightHandThumb011
+    400778: Character_Ctrl:RightHandThumb012
+    400780: Character_Ctrl:RightHandThumb013
+    400782: Character_Ctrl:RightHandThumb014
+    400784: Character_Ctrl:RightHandThumb015
+    400786: Character_Ctrl:RightHandThumb016
+    400788: Character_Ctrl:RightHandThumb1
+    400790: Character_Ctrl:RightHandThumb2
+    400792: Character_Ctrl:RightHandThumb3
+    400794: Character_Ctrl:RightHandThumb4
+    400796: Character_Ctrl:RightHandThumbEffector
+    400798: Character_Ctrl:RightHandThumbEffector001
+    400800: Character_Ctrl:RightHandThumbEffector002
+    400802: Character_Ctrl:RightHandThumbEffector003
+    400804: Character_Ctrl:RightHipEffector
+    400806: Character_Ctrl:RightHipEffector001
+    400808: Character_Ctrl:RightHipEffector002
+    400810: Character_Ctrl:RightHipEffector003
+    400812: Character_Ctrl:RightKneeEffector
+    400814: Character_Ctrl:RightKneeEffector001
+    400816: Character_Ctrl:RightKneeEffector002
+    400818: Character_Ctrl:RightKneeEffector003
+    400820: Character_Ctrl:RightLeg
+    400822: Character_Ctrl:RightLeg001
+    400824: Character_Ctrl:RightLeg002
+    400826: Character_Ctrl:RightLeg003
+    400828: Character_Ctrl:RightShoulder
+    400830: Character_Ctrl:RightShoulder001
+    400832: Character_Ctrl:RightShoulder002
+    400834: Character_Ctrl:RightShoulder003
+    400836: Character_Ctrl:RightShoulderEffector
+    400838: Character_Ctrl:RightShoulderEffector001
+    400840: Character_Ctrl:RightShoulderEffector002
+    400842: Character_Ctrl:RightShoulderEffector003
+    400844: Character_Ctrl:RightUpLeg
+    400846: Character_Ctrl:RightUpLeg001
+    400848: Character_Ctrl:RightUpLeg002
+    400850: Character_Ctrl:RightUpLeg003
+    400852: Character_Ctrl:RightWristEffector
+    400854: Character_Ctrl:RightWristEffector001
+    400856: Character_Ctrl:RightWristEffector002
+    400858: Character_Ctrl:RightWristEffector003
+    400860: Character_Ctrl:Spine
+    400862: Character_Ctrl:Spine004
+    400864: Character_Ctrl:Spine005
+    400866: Character_Ctrl:Spine006
+    400868: Character_Ctrl:Spine007
+    400870: Character_Ctrl:Spine008
+    400872: Character_Ctrl:Spine009
+    400874: Character_Ctrl:Spine010
+    400876: Character_Ctrl:Spine011
+    400878: Character_Ctrl:Spine012
+    400880: Character_Ctrl:Spine013
+    400882: Character_Ctrl:Spine014
+    400884: Character_Ctrl:Spine015
+    400886: Character_Ctrl:Spine1
+    400888: Character_Ctrl:Spine2
+    400890: Character_Ctrl:Spine3
+    400892: ladder
+    400894: //RootNode
+    400896: ladderEnd
+    400898: WomanAndHeadWithNoFeet
+    2300000: ladder
+    2300002: ladderEnd
+    2300004: //RootNode
+    3300000: ladder
+    3300002: ladderEnd
+    3300004: //RootNode
+    4300000: WomanAndHeadWithNoFeet
+    4300002: ladder
+    4300004: ladderEnd
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: WomanAndHeadWithNoFeet
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

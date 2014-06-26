@@ -109,4 +109,9 @@ public class RenderTextureGrabber : MonoBehaviour {
 		lockCount--;
 	}
 
+    void deactivateRT()
+    {
+        RenderTexture.active = null;
+    }
+
 }

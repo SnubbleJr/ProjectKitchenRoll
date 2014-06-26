@@ -42,6 +42,7 @@ public class RayCastTorch : MonoBehaviour {
         offset = DisplayCameraOffset.offset;
 
         setTexture();
+        Destroy(gameObject, destructionTime);
 
 		makeTorch();
 
@@ -50,7 +51,7 @@ public class RayCastTorch : MonoBehaviour {
 		transform.position += offset;
 
         makeBG();
-		updateTorch();
+        updateTorch();
  
 	}
 	
@@ -117,8 +118,8 @@ public class RayCastTorch : MonoBehaviour {
     {
         RTCamerBehaviour = mainCameraGrabber.getCurrentCameraBehaviour();
 
-		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime*1.25f);
-		mainCamerBehaviour.setTimer(destructionTime*1.25f);
+		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime*1.2f);
+        mainCamerBehaviour.setTimer(destructionTime * 1.2f);
 	}
 
 	void createArrays()
@@ -157,8 +158,6 @@ public class RayCastTorch : MonoBehaviour {
 
 		renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
 		torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
-
-		Destroy(gameObject, destructionTime);
 	}
 
 	Vector3[] vecArrMake(float magnitude)
@@ -308,7 +307,7 @@ public class RayCastTorch : MonoBehaviour {
 	
 	void makeBG()
 	{
-		torchBG = Instantiate(torchBG, transform.position, Quaternion.identity) as GameObject;
+		torchBG = Instantiate(torchBG, transform.position + new Vector3(0,0,0.3f), Quaternion.identity) as GameObject;
 		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
         torchBG.transform.parent = transform;
 
