@@ -4,8 +4,6 @@ using System.Collections;
 	
 public class RayCastTorchBackground : MonoBehaviour {
 
-	private bool alternateVersion;
-
 	LineRenderer BG;
 
 	private float maxSize, currentSize;
@@ -40,16 +38,8 @@ public class RayCastTorchBackground : MonoBehaviour {
 		//growRateBG *= 0.5f;
 		//growRateBG *= 0.7f;
 		
-		if(alternateVersion)
-		{
-			growRateBG *= 1.007f;
-			setScale(growRateBG);
-		}
-		else
-		{
-			setScale();
-		}
-
+		setScale();
+	
 		//BG.SetWidth(growRateBG, growRateBG);
 		//transform.localScale += new Vector3(growRateBG,growRateBG,growRateBG);
 
@@ -120,16 +110,6 @@ public class RayCastTorchBackground : MonoBehaviour {
 	public Vector3[] getVecArr()
 	{
 		return vecArr;
-	}
-
-	public void setAlternateVersion(bool AV)
-	{
-		alternateVersion = AV;
-	}
-	
-	public bool getAlternateVersion()
-	{
-		return alternateVersion;
 	}
 
 }

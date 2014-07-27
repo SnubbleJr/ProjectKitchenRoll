@@ -7,10 +7,8 @@ public class RayCastTorchEmitter : MonoBehaviour {
 	public GameObject childTorch;
 	public float torchesPerSecond = 1f;
 	public float delay = 0f;
-	public float maxSize = 5;
-	public float growRate = 0.01f;
-	public int castFrequency = 64	;
-	public float destructionTime = 3f;
+	public float energy = 5;
+	public int castFrequency = 64;
 	public bool cone;
 	public float coneTo, coneFrom;
 
@@ -39,10 +37,8 @@ public class RayCastTorchEmitter : MonoBehaviour {
 				GameObject torch = Instantiate (childTorch, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
 				RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
                 torch.transform.parent = transform;
-				torchScript.setMaxSize (maxSize);
-				torchScript.setGrowRate (growRate);
+				torchScript.setEnergy (energy);
 				torchScript.setCastFrequency (castFrequency);
-				torchScript.setDestructionTime (destructionTime);
 				torchScript.setCone (cone);
 				torchScript.setConeFrom (coneFrom);
 				torchScript.setConeTo (coneTo);

@@ -7,6 +7,7 @@ public class MainCameraBehaviour : MonoBehaviour {
 	private float zOffset;
 	private float zIncrement = 0.005f;
 	private float timeToZReset;
+    private int torchCount = 0;
 
 	//Everything for the Main camera without actually getting thge texture
 
@@ -17,8 +18,7 @@ public class MainCameraBehaviour : MonoBehaviour {
 	}
 	
 	void Update () {
-		timeToZReset -= Time.deltaTime;
-		if (timeToZReset < 0)
+        if (torchCount <= 0)
 		{
 			setZToDefault();
 		}
@@ -46,6 +46,7 @@ public class MainCameraBehaviour : MonoBehaviour {
 	void setZToDefault()
 	{
 		zOffset = 1f;
+        torchCount = 0;
 	}
 	
 	void increaseZ()
@@ -53,17 +54,15 @@ public class MainCameraBehaviour : MonoBehaviour {
 		zOffset += zIncrement;
 	}
 	
-	public void setTimer(float time)
-	{
-		if (time > timeToZReset)
-		{
-			timeToZReset = time;
-		}
-	}
-	
 	public float getZOffset()
 	{
+        torchCount++;
 		return zOffset;
 	}
+
+    public void informTorchDestoryed()
+    {
+        torchCount--;
+    }
 
 }
