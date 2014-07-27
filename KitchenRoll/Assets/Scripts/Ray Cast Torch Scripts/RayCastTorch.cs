@@ -6,24 +6,21 @@ public class RayCastTorch : MonoBehaviour {
 
 	public GameObject torchBG;
 
-	public bool alternateVersion = false;
-
 	//default values
-	private float maxSize = 15;
-	private float growRate = 0.01f;
+	private float maxSize = 150;
+	private float growRate = 0.33f;
 	private int castFrequency = 64;
 	private float destructionTime = 2f;
 	private Vector3 offset;
 	private bool spawnAgain = true;
 	private bool cone = false;
 	private float coneTo, coneFrom;
+    private float fadeRate;
 
     MainCameraBehaviour mainCamerBehaviour, RTCamerBehaviour;
 	RenderTextureGrabber mainCameraGrabber;
 
 	RayCastTorchBackground torchBGScript;
-
-    double uvVecRatioX, uvVecRatioY, uvVecRatioMaxX, uvVecRatioMaxY;
 
 	Mesh mesh = new Mesh();	
 	Vector3[] maxVecArr;
@@ -31,28 +28,31 @@ public class RayCastTorch : MonoBehaviour {
 	Vector2[] uvArr;
 	int[] triArr;
 
-	private float currentGrowRate;
 	private float currentSize;
-	private float timerSize;
-	
+
+    //TODO: MAKE IT LIKE HOW THE OLD TORCH USED JTO BE: GROWING SLOWLY
+    //THEN SEND THE VEC DATA  TO THE BACK GROUND, TO SEW THE OUUTLINE TO MATCH IT
+
 	void Start () {
+
+        setEnergy(10f);
 
         mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
 		mainCameraGrabber = Camera.main.GetComponent<RenderTextureGrabber>();
         offset = DisplayCameraOffset.offset;
 
         setTexture();
-        Destroy(gameObject, destructionTime);
 
 		makeTorch();
 
 		//moving it to the top plane
-		offset.z = mainCamerBehaviour.getZOffset ();
+		offset.z = mainCamerBehaviour.getZOffset();
 		transform.position += offset;
 
         makeBG();
         updateTorch();
- 
+
+        currentSize += growRate;
 	}
 	
 	// Update is called once per frame
@@ -60,27 +60,21 @@ public class RayCastTorch : MonoBehaviour {
 	{
 		//transform.position = Vector3.Lerp (transform.position, transform.position - (new Vector3 (0	, 0, 0.01f)), destructionTime);
 
-		if (timerSize >= (maxSize - 1)) {
-			fade ();
-		} else {
-			currentGrowRate += growRate;
-			currentSize += growRate;
-			timerSize += currentGrowRate;
-
-            if (!alternateVersion)
-            {
-                updateTorch();
-                updateBG();
-            }
-		}
+        fade();
+		
+        updateTorch();
+        updateBG();
+    
+        if (renderer.material.color.b <= 0.01f)
+        {
+            Destroy(gameObject);
+        }
 	
 	}
 
 	void makeTorch()
 	{
-		currentSize = 0.1f;
-		timerSize = currentSize;
-		currentGrowRate = 0f;
+		currentSize = 0f;
 		
 		//if cone is not set, then make it a circle
 		if (!cone)
@@ -112,6 +106,7 @@ public class RayCastTorch : MonoBehaviour {
 		DestroyImmediate(mesh);
 		DestroyImmediate(renderer.material);
 		DestroyImmediate(torchBG);
+        mainCamerBehaviour.informTorchDestoryed();
 	}
 
 	void setTexture()
@@ -119,7 +114,6 @@ public class RayCastTorch : MonoBehaviour {
         RTCamerBehaviour = mainCameraGrabber.getCurrentCameraBehaviour();
 
 		renderer.material.mainTexture = mainCameraGrabber.getTexture(destructionTime*1.2f);
-        mainCamerBehaviour.setTimer(destructionTime * 1.2f);
 	}
 
 	void createArrays()
@@ -127,25 +121,13 @@ public class RayCastTorch : MonoBehaviour {
 		maxVecArr = vecArrMake(maxSize);	
 		maxVecArr = collisionChecking(maxVecArr);
 
-		if(alternateVersion)
-		{
-			vecArr = maxVecArr;	
-		}
-		else
-		{
-			vecArr = vecArrMake(1.0f);
-		}
-
+		vecArr = vecArrMake(1.0f);
+	
 		uvArr = uvArrMake(vecArr);
 
         int i = 1;
 
         Vector2[] mazUvArr = uvArrMake(maxVecArr);
-
-        uvVecRatioX = uvArr[i].x / vecArr[i].x;
-        uvVecRatioY = uvArr[i].y / vecArr[i].y;
-        uvVecRatioMaxX = mazUvArr[i].x / maxVecArr[i].x;
-        uvVecRatioY = mazUvArr[i].y / maxVecArr[i].y;
 
 		triArr = triArrMake();
 
@@ -154,10 +136,9 @@ public class RayCastTorch : MonoBehaviour {
 	void fade()
 	{
 		//slowly move back the torch and make it fade, as torches have cut out materials, fade by turning it black
-		float rate = Time.deltaTime*destructionTime;
 
-		renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
-		torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, rate);
+		renderer.material.color = Color.Lerp(renderer.material.color, Color.black, fadeRate);
+		torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, fadeRate);
 	}
 
 	Vector3[] vecArrMake(float magnitude)
@@ -230,7 +211,7 @@ public class RayCastTorch : MonoBehaviour {
 					absorbtionValue = 1f;
 				}
 				
-				absorbtionValue *= (1 - rayDistance);
+				absorbtionValue *= (1 +rayDistance);
 
 				//rebound code
 				//StartCoroutine( subTorch(transform.TransformPoint(vecArr[i]*(rayDistance*0.9f)), (vecArr[i].magnitude - ray.distance) * (1 - absorbtionValue)));
@@ -297,8 +278,7 @@ public class RayCastTorch : MonoBehaviour {
 			yield return new WaitForEndOfFrame();
 			GameObject torch = Instantiate (this.gameObject, location, transform.rotation) as GameObject;
 			RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
-			torchScript.setMaxSize (size);
-			torchScript.setGrowRate (growRate);
+			torchScript.setEnergy (size);
 			torchScript.setCastFrequency (childFreq);
 			torchScript.setDestructionTime (destructionTime);
 			torchScript.setSpawnAgain (false);
@@ -311,8 +291,7 @@ public class RayCastTorch : MonoBehaviour {
 		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
         torchBG.transform.parent = transform;
 
-		torchBGScript.setAlternateVersion(!alternateVersion);
-		torchBGScript.setMaxSize(maxSize);
+		torchBGScript.setMaxSize(maxSize/10);
 		torchBGScript.setCastFrequency(castFrequency);
 		torchBGScript.setVecArr(vecArr);
 
@@ -329,24 +308,14 @@ public class RayCastTorch : MonoBehaviour {
 		return mesh;
 	}
 
-	public void setMaxSize(float size)
+	public void setEnergy(float rate)
 	{
-		maxSize = size;
+        fadeRate = Time.deltaTime * (1f/(rate/10));
 	}
 	
-	public float getMaxSize()
+	public float getEnergy()
 	{
-		return maxSize;
-	}
-			
-	public void setGrowRate(float rate)
-	{
-		growRate = rate;
-	}
-
-	public float getGrowRate()
-	{
-		return growRate;
+		return fadeRate;
 	}
 		
 	public void setCastFrequency(int freq)
@@ -418,4 +387,5 @@ public class RayCastTorch : MonoBehaviour {
 	{
 		return torchBG;
 	}
+
 }
