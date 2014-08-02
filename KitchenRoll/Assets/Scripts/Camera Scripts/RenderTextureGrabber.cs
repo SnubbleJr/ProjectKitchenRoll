@@ -17,7 +17,7 @@ public class RenderTextureGrabber : MonoBehaviour {
 
 		public RT()
         {
-			renderTexture = new RenderTexture(1024,1024,24);
+			renderTexture = new RenderTexture(1024,1024,-1);
 			locked = false;
 		}
 

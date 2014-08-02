@@ -33,13 +33,11 @@ public class MainCameraBehaviour : MonoBehaviour {
 	{
 		//offset co ords so it's realitve to the camera
 		Vector2 uv;
-		Vector3 worldCoOrd;
-		
-		worldCoOrd = camera.WorldToScreenPoint(posistion);
-		
-		uv.x = ((worldCoOrd/camera.pixelWidth).x);
-		uv.y = ((worldCoOrd/camera.pixelHeight).y);
-		
+
+		Vector3 worldCoOrd = camera.WorldToViewportPoint(posistion);
+
+        uv.x = worldCoOrd.x;
+        uv.y = worldCoOrd.y;
 		return uv;
 	}
 	

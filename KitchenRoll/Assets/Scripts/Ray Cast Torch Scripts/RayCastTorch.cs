@@ -15,7 +15,7 @@ public class RayCastTorch : MonoBehaviour {
 	private bool spawnAgain = true;
 	private bool cone = false;
 	private float coneTo, coneFrom;
-    private float fadeRate;
+    private float fadeRate = -1f;
 
     MainCameraBehaviour mainCamerBehaviour, RTCamerBehaviour;
 	RenderTextureGrabber mainCameraGrabber;
@@ -34,8 +34,10 @@ public class RayCastTorch : MonoBehaviour {
     //THEN SEND THE VEC DATA  TO THE BACK GROUND, TO SEW THE OUUTLINE TO MATCH IT
 
 	void Start () {
-
-        setEnergy(10f);
+        if (fadeRate < 0)
+        {
+            setEnergy(2f);
+        }
 
         mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
 		mainCameraGrabber = Camera.main.GetComponent<RenderTextureGrabber>();
@@ -125,8 +127,6 @@ public class RayCastTorch : MonoBehaviour {
 	
 		uvArr = uvArrMake(vecArr);
 
-        int i = 1;
-
         Vector2[] mazUvArr = uvArrMake(maxVecArr);
 
 		triArr = triArrMake();
@@ -166,9 +166,9 @@ public class RayCastTorch : MonoBehaviour {
 		Vector2[] uv = new Vector2[vecArr.Length];
 
 		for (int i=0; i<vecArr.Length; i++)
-		{
-			uv[i] = RTCamerBehaviour.uvFromWorldToScreen(transform.TransformPoint(vecArr[i])-offset);
-		}
+        {
+            uv[i] = RTCamerBehaviour.uvFromWorldToScreen(transform.TransformPoint(vecArr[i]) - offset);
+        }
 		return uv;
 	}
 
@@ -204,14 +204,14 @@ public class RayCastTorch : MonoBehaviour {
 				rayDistance = ray.distance/maxSize;
 				try
 				{
-					absorbtionValue = ray.collider.gameObject.GetComponent<Absorbtion>().absobtion;
+					absorbtionValue = ray.collider.gameObject.GetComponent<Absorbtion>().absobtion/10;
 				}
 				catch 
 				{
 					absorbtionValue = 1f;
 				}
 				
-				absorbtionValue *= (1 +rayDistance);
+				absorbtionValue *= (1 + rayDistance);
 
 				//rebound code
 				//StartCoroutine( subTorch(transform.TransformPoint(vecArr[i]*(rayDistance*0.9f)), (vecArr[i].magnitude - ray.distance) * (1 - absorbtionValue)));
@@ -310,6 +310,7 @@ public class RayCastTorch : MonoBehaviour {
 
 	public void setEnergy(float rate)
 	{
+        maxSize = rate;
         fadeRate = Time.deltaTime * (1f/(rate/10));
 	}
 	
