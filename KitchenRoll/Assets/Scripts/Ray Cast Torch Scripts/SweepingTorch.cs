@@ -5,8 +5,6 @@ using System.Linq;
 public class SweepingTorch : MonoBehaviour
 {
 
-    public GameObject torchBG;
-
     //default values
     private float width = 5f;
     private float height = 25f;
@@ -28,8 +26,6 @@ public class SweepingTorch : MonoBehaviour
     MainCameraBehaviour mainCamerBehaviour, RTCamerBehaviour;
     RenderTextureGrabber mainCameraGrabber;
 
-    RayCastTorchBackground torchBGScript;
-
     Mesh mesh = new Mesh();
     Vector3[] maxVecArr;
     Vector3[] vecArr;
@@ -38,8 +34,8 @@ public class SweepingTorch : MonoBehaviour
 
     private float currentSize;
 
-    //TODO: MAKE IT LIKE HOW THE OLD TORCH USED JTO BE: GROWING SLOWLY
-    //THEN SEND THE VEC DATA  TO THE BACK GROUND, TO SEW THE OUUTLINE TO MATCH IT
+    //TODO: Might have this done good with the shader, but might need to also modify it a bit more
+    //make it so that it's thinner, by not editing the radi, and changing the XYZW things
 
     void Start()
     {
@@ -60,7 +56,6 @@ public class SweepingTorch : MonoBehaviour
         offset.z = mainCamerBehaviour.getZOffset();
         transform.position += offset;
 
-        makeBG();
         updateTorch();
 
         currentSize += growRate;
@@ -74,9 +69,8 @@ public class SweepingTorch : MonoBehaviour
         fade();
 
         updateTorch();
-        updateBG();
 
-        if (renderer.material.color.b <= 0.01f)
+        if (renderer.material.color.b <= 0.018f)
         {
             Destroy(gameObject);
         }
@@ -116,7 +110,6 @@ public class SweepingTorch : MonoBehaviour
     {
         DestroyImmediate(mesh);
         DestroyImmediate(renderer.material);
-        DestroyImmediate(torchBG);
         mainCamerBehaviour.informTorchDestoryed();
     }
 
@@ -146,7 +139,6 @@ public class SweepingTorch : MonoBehaviour
         //slowly move back the torch and make it fade, as torches have cut out materials, fade by turning it black
 
         renderer.material.color = Color.Lerp(renderer.material.color, Color.black, fadeRate);
-        torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, fadeRate);
     }
 
     Vector3[] vecArrMake(float magnitude)
@@ -157,30 +149,14 @@ public class SweepingTorch : MonoBehaviour
 
         for (int i = 0; i < castFrequency; i++)
         {
-            vecArr[i] = (Quaternion.Euler(0, 0, (((coneTo - coneFrom) / castFrequency) * i)) * new Vector3(1f,1f,0));
+            vecArr[i] = (Quaternion.Euler(0, 0, (((coneTo - coneFrom) / castFrequency) * i)) * new Vector3(-1f,1f,0));
+
+            vecArr[i].Scale(new Vector3(width * magnitude, height, 0f));
+
             //left to right, 1st half
-            if (direction)
+            if (i < (castFrequency/2) == direction)
             {
-                if (i < 3 && i != 0)
-                {
-                    vecArr[i].Scale(new Vector3(width * magnitude, height, 0f));
-                }
-                else
-                {
-                    vecArr[i].Scale(new Vector3(0, height, 0f));
-                }
-            }
-            //right to left, 2nd half
-            else
-            {
-                if (i >= 3 || i == 0)
-                {
-                    vecArr[i].Scale(new Vector3(width * magnitude, height, 0f));
-                }
-                else
-                {
-                    vecArr[i].Scale(new Vector3(0, height, 0f));
-                }
+                vecArr[i].Scale(new Vector3(0, 1, 0f));
             }
         }
 
@@ -285,24 +261,6 @@ public class SweepingTorch : MonoBehaviour
         }
     }
 
-    void makeBG()
-    {
-        torchBG = Instantiate(torchBG, transform.position + new Vector3(0, 0, 0.3f), Quaternion.identity) as GameObject;
-        torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
-        torchBG.transform.parent = transform;
-
-        torchBGScript.setMaxSize(maxSize / 10);
-        torchBGScript.setCastFrequency(castFrequency);
-        torchBGScript.setVecArr(vecArr);
-
-        updateBG();
-    }
-
-    void updateBG()
-    {
-        //torchBGScript.setCurrentSize(currentSize);
-    }
-
     public Mesh getMesh()
     {
         return mesh;
@@ -377,16 +335,6 @@ public class SweepingTorch : MonoBehaviour
     public float getConeTo()
     {
         return coneTo;
-    }
-
-    public void setTorchBG(GameObject BG)
-    {
-        torchBG = BG;
-    }
-
-    public GameObject getTorchBG()
-    {
-        return torchBG;
     }
 
     public void setWidth(float w)

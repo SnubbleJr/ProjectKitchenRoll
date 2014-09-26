@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -42,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ee1e27e441cfd7e40a18d8364b4d1836, type: 2}
+  - {fileID: 2100000, guid: 4ada81a1c2019a142827b4435a7868f5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -68,7 +69,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b6828aca3c8644a9e7da4a9ac8e86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torchBG: {fileID: 100000, guid: b78b934b9d1998b40ae15efa3bb7a498, type: 2}
+  torchBG: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95952021359a9c42a3d2a025a01afe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inner: -.200000003
+  outer: 0
+  innerGrowRate: .200000003
+  outerGrowRate: 1
+  innerThreshold: 0
+  outerThreshold: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

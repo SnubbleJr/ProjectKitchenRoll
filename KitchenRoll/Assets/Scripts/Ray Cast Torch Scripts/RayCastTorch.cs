@@ -36,7 +36,7 @@ public class RayCastTorch : MonoBehaviour {
 	void Start () {
         if (fadeRate < 0)
         {
-            setEnergy(2f);
+            setEnergy(20f);
         }
 
         mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
@@ -65,9 +65,8 @@ public class RayCastTorch : MonoBehaviour {
         fade();
 		
         updateTorch();
-        updateBG();
     
-        if (renderer.material.color.b <= 0.01f)
+        if (renderer.material.color.b <= 0.018f)
         {
             Destroy(gameObject);
         }
@@ -107,6 +106,7 @@ public class RayCastTorch : MonoBehaviour {
 	void OnDestroy() {
 		DestroyImmediate(mesh);
 		DestroyImmediate(renderer.material);
+        if(torchBG != null)
 		DestroyImmediate(torchBG);
         mainCamerBehaviour.informTorchDestoryed();
 	}
@@ -123,7 +123,7 @@ public class RayCastTorch : MonoBehaviour {
 		maxVecArr = vecArrMake(maxSize);	
 		maxVecArr = collisionChecking(maxVecArr);
 
-		vecArr = vecArrMake(1.0f);
+		vecArr = vecArrMake(0.1f);
 	
 		uvArr = uvArrMake(vecArr);
 
@@ -138,6 +138,8 @@ public class RayCastTorch : MonoBehaviour {
 		//slowly move back the torch and make it fade, as torches have cut out materials, fade by turning it black
 
 		renderer.material.color = Color.Lerp(renderer.material.color, Color.black, fadeRate);
+
+        if(torchBG != null)
 		torchBG.renderer.material.color = Color.Lerp(renderer.material.color, Color.black, fadeRate);
 	}
 
@@ -287,20 +289,16 @@ public class RayCastTorch : MonoBehaviour {
 	
 	void makeBG()
 	{
-		torchBG = Instantiate(torchBG, transform.position + new Vector3(0,0,0.3f), Quaternion.identity) as GameObject;
-		torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
-        torchBG.transform.parent = transform;
+        if (torchBG != null)
+        {
+            torchBG = Instantiate(torchBG, transform.position + new Vector3(0, 0, 0.3f), Quaternion.identity) as GameObject;
+            torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
+            torchBG.transform.parent = transform;
 
-		torchBGScript.setMaxSize(maxSize/10);
-		torchBGScript.setCastFrequency(castFrequency);
-		torchBGScript.setVecArr(vecArr);
-
-		updateBG();
-	}
-
-	void updateBG()
-	{
-        //torchBGScript.setCurrentSize(currentSize);
+            torchBGScript.setMaxSize(maxSize / 10);
+            torchBGScript.setCastFrequency(castFrequency);
+            torchBGScript.setVecArr(vecArr);
+        }
 	}
 
 	public Mesh getMesh()

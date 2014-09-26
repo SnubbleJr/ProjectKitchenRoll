@@ -40,12 +40,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childTorch: {fileID: 100000, guid: 1bd7dade2f254d2439c23761b4503866, type: 2}
-  width: 5
+  width: 1
   height: 25
   forward: 0
   torchesPerSecond: 1
   delay: .280000001
-  energy: 15
+  energy: 20
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
