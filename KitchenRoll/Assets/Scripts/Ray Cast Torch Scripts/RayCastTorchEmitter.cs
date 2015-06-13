@@ -34,7 +34,7 @@ public class RayCastTorchEmitter : MonoBehaviour {
 		{
 			if (firstFrameRendered)
 			{
-				GameObject torch = Instantiate (childTorch, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
+				GameObject torch = Instantiate (childTorch, transform.position, transform.rotation) as GameObject;
 				RayCastTorch torchScript = torch.GetComponent<RayCastTorch>();
                 torch.transform.parent = transform;
 				torchScript.setEnergy (energy);

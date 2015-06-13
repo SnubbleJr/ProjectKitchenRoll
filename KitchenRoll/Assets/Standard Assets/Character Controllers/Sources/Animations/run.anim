@@ -4901,6 +4901,9 @@ AnimationClip:
   m_Bounds:
     m_Center: {x: .026084125, y: -.136159062, z: -.00730526447}
     m_Extent: {x: .318626732, y: .809974909, z: .934572101}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0

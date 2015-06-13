@@ -19,8 +19,9 @@ public class RayCastTorch : MonoBehaviour {
 
     MainCameraBehaviour mainCamerBehaviour, RTCamerBehaviour;
 	RenderTextureGrabber mainCameraGrabber;
+    torchUVTestScript torchUVScript;
 
-	RayCastTorchBackground torchBGScript;
+	RayCastTorchRipple torchBGScript;
 
 	Mesh mesh = new Mesh();	
 	Vector3[] maxVecArr;
@@ -41,6 +42,7 @@ public class RayCastTorch : MonoBehaviour {
 
         mainCamerBehaviour = Camera.main.GetComponent<MainCameraBehaviour>();
 		mainCameraGrabber = Camera.main.GetComponent<RenderTextureGrabber>();
+        torchUVScript = GetComponent<torchUVTestScript>();
         offset = DisplayCameraOffset.offset;
 
         setTexture();
@@ -98,6 +100,9 @@ public class RayCastTorch : MonoBehaviour {
         uvArr = uvArrMake(vecArr);
         meshUpdate(vecArr, uvArr, triArr);
 
+        //set the centre of the torch effect to be the centre of the mesh
+        torchUVScript.setDistort(uvArr[uvArr.Length - 1]);
+
 		//Graphics.DrawMeshNow(mesh, Vector3.zero, Quaternion.identity);
 
 		//debugDraw(vecArr);
@@ -127,10 +132,7 @@ public class RayCastTorch : MonoBehaviour {
 	
 		uvArr = uvArrMake(vecArr);
 
-        Vector2[] mazUvArr = uvArrMake(maxVecArr);
-
 		triArr = triArrMake();
-
 	}
 
 	void fade()
@@ -206,14 +208,14 @@ public class RayCastTorch : MonoBehaviour {
 				rayDistance = ray.distance/maxSize;
 				try
 				{
-					absorbtionValue = ray.collider.gameObject.GetComponent<Absorbtion>().absobtion/10;
+					absorbtionValue = ray.collider.gameObject.GetComponent<Absorbtion>().absobtion;
 				}
 				catch 
 				{
 					absorbtionValue = 1f;
 				}
 				
-				absorbtionValue *= (1 + rayDistance);
+				absorbtionValue *= (1 - rayDistance);
 
 				//rebound code
 				//StartCoroutine( subTorch(transform.TransformPoint(vecArr[i]*(rayDistance*0.9f)), (vecArr[i].magnitude - ray.distance) * (1 - absorbtionValue)));
@@ -291,13 +293,11 @@ public class RayCastTorch : MonoBehaviour {
 	{
         if (torchBG != null)
         {
-            torchBG = Instantiate(torchBG, transform.position + new Vector3(0, 0, 0.3f), Quaternion.identity) as GameObject;
-            torchBGScript = torchBG.GetComponent<RayCastTorchBackground>();
+            torchBG = Instantiate(torchBG, transform.position, Quaternion.Euler(new Vector3(0, 180, 0)) ) as GameObject;
+            torchBGScript = torchBG.GetComponent<RayCastTorchRipple>();
             torchBG.transform.parent = transform;
 
-            torchBGScript.setMaxSize(maxSize / 10);
-            torchBGScript.setCastFrequency(castFrequency);
-            torchBGScript.setVecArr(vecArr);
+            torchBGScript.setMaterial(renderer.material.mainTexture);
         }
 	}
 

@@ -291,22 +291,29 @@ function DidJump ()
 }
 
 function Update() {
+	//new stuff
+
+
+	if (Input.GetKeyDown ("down"))
+	{
+		SpawnProjectorClap(10);
+	}
+
+    //check if at ledge
 	
+    //end new stuff
+
 	if (!isControllable)
 	{
 		// kill all inputs if not controllable.
 		Input.ResetInputAxes();
 	}
 
-	if (Input.GetKeyDown ("down"))
-	{
-		SpawnProjectorClap(10);
-	}
-	
 	if (Input.GetButtonDown ("Jump"))
 	{
 		lastJumpButtonTime = Time.time;
 	}
+
 
 	UpdateSmoothedMovementDirection();
 	
@@ -411,7 +418,11 @@ function IsJumping () {
 }
 
 function IsGrounded () {
-	return (collisionFlags & CollisionFlags.CollidedBelow) != 0;
+    return (collisionFlags & CollisionFlags.CollidedBelow) != 0;
+}
+
+function IsBeside () {
+    return (collisionFlags & CollisionFlags.CollideSide) != 0;
 }
 
 function GetDirection () {
@@ -451,26 +462,28 @@ function Reset ()
 
 function SpawnProjectorClap (size : float)
 {
-	vector = transform.Find("Bip001/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R Clavicle/Bip001  R UpperArm/Bip001  R Forearm/Bip001  R Hand");
+	var vector: Vector3 = transform.Find("Bip001/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R Clavicle/Bip001  R UpperArm/Bip001  R Forearm/Bip001  R Hand").position;
 
 	var torch : GameObject = Instantiate(projector, vector.transform.position + new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
 }
 		
 function SpawnProjectorAtFeet (foot  : String)
-{
-		if (foot == "left")
-		{
-			feetVector = transform.Find("Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot");
-		}
-		else if (foot == "right")
-		{
-			feetVector = transform.Find("Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot");
-		}
-		else if (foot == "both")
-		{
-			feetVector = transform.Find("Bip001/Bip001 Pelvis");
-		}
-		
+    {
+        var feetVector: Vector3;
+
+        switch(foot)
+        {
+            case "left":
+                feetVector = transform.Find("Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot").position;
+                break;
+            case "right":
+			    feetVector = transform.Find("Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot").position;
+			    break;
+            case "both":
+                feetVector = transform.Find("Bip001/Bip001 Pelvis/Bip001 Spine").position;
+                break;
+        }
+
 		var rnd : int = Random.Range(0, 4);
 
 		switch (rnd)
@@ -489,5 +502,5 @@ function SpawnProjectorAtFeet (foot  : String)
 			break;
 		}			
 
-		var torch : GameObject = Instantiate(projector, feetVector.transform.position + new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+		Instantiate(projector, feetVector, Quaternion.identity);
 }

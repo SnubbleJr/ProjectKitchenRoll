@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b6828aca3c8644a9e7da4a9ac8e86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torchBG: {fileID: 0}
+  torchBG: {fileID: 100000, guid: 7ebe3ec7f56d97f44a026e984b95d4ed, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
   innerGrowRate: .200000003
   outerGrowRate: 1
   innerThreshold: 0
-  outerThreshold: 1
+  outerThreshold: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

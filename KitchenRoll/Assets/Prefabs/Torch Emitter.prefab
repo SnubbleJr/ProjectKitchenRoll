@@ -23,10 +23,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.998699188, y: -34.7763977, z: .100000001}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41,11 +42,8 @@ MonoBehaviour:
   childTorch: {fileID: 100000, guid: e91749294d10ff3478faef68a0475c8c, type: 2}
   torchesPerSecond: 1
   delay: 0
-  maxSize: 5
-  growRate: .00999999978
+  energy: 5
   castFrequency: 36
-  destructionTime: 3
-  offset: {x: 0, y: 256, z: 0}
   cone: 0
   coneTo: 360
   coneFrom: 0

@@ -37,7 +37,7 @@ public class SweepingTorchEmitter : MonoBehaviour
         {
             if (firstFrameRendered)
             {
-                GameObject torch = Instantiate(childTorch, transform.position + new Vector3(0, 0, 0), transform.rotation) as GameObject;
+                GameObject torch = Instantiate(childTorch, transform.position, transform.rotation) as GameObject;
                 SweepingTorch torchScript = torch.GetComponent<SweepingTorch>();
                 torch.transform.parent = transform;
                 torchScript.setWidth(width);

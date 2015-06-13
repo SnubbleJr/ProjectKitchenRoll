@@ -128,10 +128,7 @@ public class SweepingTorch : MonoBehaviour
 
         uvArr = uvArrMake(vecArr);
 
-        Vector2[] mazUvArr = uvArrMake(maxVecArr);
-
         triArr = triArrMake();
-
     }
 
     void fade()
