@@ -16,7 +16,7 @@ public class LadderTopScript : MonoBehaviour {
 	void OnTriggerStay(Collider other) {
 		if (other.name == "Player") {
 			if (Input.GetKeyDown(KeyCode.S)) {
-				other.transform.position = new Vector3(44, -16, -10);
+				other.transform.position -= new Vector3(0, 10, 0);
 			}
 		}
 	}

@@ -80,9 +80,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c95952021359a9c42a3d2a025a01afe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inner: .5
-  outer: .5
-  innerGrowRate: 1
+  inner: 0
+  outer: 0
+  innerGrowRate: 0
   outerGrowRate: 1
   innerThreshold: 0
   outerThreshold: 0

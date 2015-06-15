@@ -489,16 +489,16 @@ function SpawnProjectorAtFeet (foot  : String)
 		switch (rnd)
 		{
 		case 0:
-			AudioSource.PlayClipAtPoint(clip1, new Vector3(0,0,1));
-			break;
-		case 1:
-			AudioSource.PlayClipAtPoint(clip2, new Vector3(0,0,1));
-			break;
-		case 2:
-			AudioSource.PlayClipAtPoint(clip3, new Vector3(0,0,1));
-			break;
-		default:
-			AudioSource.PlayClipAtPoint(clip4, new Vector3(0,0,1));
+		    AudioSource.PlayClipAtPoint(clip1, Camera.main.transform.position, 0.1f);
+			break;                   
+        case 1:                      
+            AudioSource.PlayClipAtPoint(clip2, Camera.main.transform.position, 0.1f);
+			break;                   
+        case 2:                      
+            AudioSource.PlayClipAtPoint(clip3, Camera.main.transform.position, 0.1f);
+			break;                         
+        default:                           
+            AudioSource.PlayClipAtPoint(clip4, Camera.main.transform.position, 0.1f);
 			break;
 		}			
 

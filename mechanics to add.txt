@@ -1,0 +1,34 @@
+touch mechanic: v small torched on contact points for Kam in the "same style that showing Kam will have; choppy, film grainy"
+
+
+Water mechanic: water muffles sound while in it. sound can't penitrate through it. 
+
+	water fall: while in it, radius of picking up sound is reduced, torches made in it are reduced.
+	If water fall is between a sound and the player, then they can't see it.
+	If a torch hits the water fall, then it stops on the water fall.
+	
+	can see the water always, as a rushing light grey stream.
+
+	
+	Example of hidden ledge: the ledge is actually just above Kam before she gets to the waterfall, it ends in the water fall.
+	Assumption from the player would be that's it was a ceiling, and now that the waterfall signiyied the are opening up; that it was not a ledge.
+	Player can stomp in the water fall to show this, either side of it they couldn't.
+
+	OPTIONAL, MAYBE SOUND IN WATERFALLS IS FUNNELED, A BIT LIKE LIGHT, WOULD MAKE THIS XAMPLE A BIT MORE LEGIT
+
+	diving: sound rippling off the surface of the water like light. Not a lot of sound penitrates the water.
+
+	when dived, the background slowly darkens to show the depth they are reaching.
+
+	can still see the top of the water, sound rippling off
+
+	has to mainly use touch to find way round
+
+	has to dive in one end, go down, can come up from the other.
+
+
+this is more of an experience, a sensation, puzzles can be added with this.
+
+Mainly to hid secrets? water fall stopping player from seeing a hidden ledge
+
+alterative cove with secret while diving.
